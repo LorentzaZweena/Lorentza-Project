@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".suround.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/ibMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_menu" />
+
+        <TextView
+            android:id="@+id/teks17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discover"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="32dp"
+            android:textStyle="normal"
+            />
+
+        <ImageButton
+            android:id="@+id/ibNotif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notif"
+            android:layout_toRightOf="@+id/teks17"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="24dp"
+            />
+
+        <TextView
+            android:id="@+id/teks18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:layout_below="@id/ibMenu"
+            android:textSize="24dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_below="@id/teks18"
+            android:layout_marginTop="30dp"
+            android:id="@+id/cvSearch"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="70dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search music, album, ..."
+                android:padding="15dp"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/ic_search"
+                android:drawableTint="#BEBEBE"
+                />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/teks19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvSearch"
+            android:layout_marginTop="30dp"
+            android:text="Trending"
+            android:layout_marginStart="40dp"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teks20"
+            android:layout_toRightOf="@id/teks19"
+            android:layout_marginTop="35dp"
+            android:layout_below="@id/cvSearch"
+            android:text="Show more"
+            android:textSize="14dp"
+            android:layout_marginStart="160dp"
+            android:textColor="#A3A3A3"
+            />
+        <ScrollView
+            android:id="@+id/svHome"
+            android:layout_width="match_parent"
+            android:layout_below="@id/teks19"
+            android:layout_marginTop="15dp"
+            android:layout_height="175dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rvHome"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </ScrollView>
+        <TextView
+            android:id="@+id/teks21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/svHome"
+            android:layout_marginStart="42sp"
+            android:textSize="16dp"
+            android:text="Recently"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/svHome"
+            android:layout_centerHorizontal="true"
+            android:text="Popular"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#A2A2A2"
+            />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="136dp"
+    android:layout_marginStart="40dp"
+    android:layout_marginTop="20dp"
+    android:background="#FEFEFE"
+    android:layout_height="154dp">
+
+    <ImageButton
+        android:id="@+id/ibTrending"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/image13"
+        />
+    <TextView
+        android:id="@+id/tvTrending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Anonymous M"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_marginTop="103dp"
+        android:layout_marginStart="9dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Unknown"
+        android:layout_marginTop="125dp"
+        android:layout_marginStart="10dp"
+        android:textSize="13dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play"
+        android:layout_marginTop="123dp"
+        android:layout_marginStart="95dp"
+        />
+</androidx.cardview.widget.CardView>

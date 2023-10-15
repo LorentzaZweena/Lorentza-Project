@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".suround.mehPart2Activity">
+
+    <Button
+        android:id="@+id/btnSkipPart2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="skip"
+        android:textSize="16sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10sp"
+        android:layout_marginTop="10sp"
+        />
+
+    <ImageView
+        android:id="@+id/gambar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image3"
+        android:layout_below="@+id/btnSkipPart2"
+        android:layout_marginStart="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/gambar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image4"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gambar3"
+        />
+
+    <ImageView
+        android:id="@+id/gambar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image5"
+        android:layout_below="@+id/btnSkipPart2"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@+id/gambar4"
+        />
+
+    <ImageView
+        android:id="@+id/gambar6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image6"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gambar5"
+        android:layout_toRightOf="@+id/gambar4"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:id="@+id/teks4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gambar6"
+        android:layout_marginTop="10sp"
+        android:text="An app for extraordinary \nsinger in the world"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:lineHeight="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/teks5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teks4"
+        android:text="Let’s find the next song event for you \nwith just one of our best apps"
+        android:textAlignment="center"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:lineHeight="24dp"
+        android:textColor="#938383"
+        />
+
+    <Button
+        android:id="@+id/btnGetStartedPart2"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_below="@+id/teks5"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="30sp"
+        android:text="Continue"
+        android:backgroundTint="#0C134F"
+        />
+</RelativeLayout>

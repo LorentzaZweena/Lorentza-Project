@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".suround.signupActivity">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width= "wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#FEFAFD"
+        android:layout_marginTop="23sp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/teks12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, Welcome!"
+        android:layout_below="@+id/btnBack"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/teks13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up to your account "
+        android:layout_below="@+id/teks12"
+        android:layout_marginStart="28dp"
+        android:textSize="16dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#C9989494"
+        />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Your email"
+        android:layout_below="@id/teks13"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="60sp"
+        android:layout_marginTop="30sp"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="10sp"
+        android:drawableTint="#C1BEC1"
+        android:background="@drawable/stroke"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_below="@+id/inputEmail"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="60sp"
+        android:layout_marginTop="30dp"
+        android:hint="Your password"
+        android:drawableStart="@drawable/ic_password"
+        android:drawableTint="#C0BDC0"
+        android:drawablePadding="10sp"
+        android:background="@drawable/stroke"
+        android:padding="10sp"
+        />
+
+    <Button
+        android:id="@+id/btnSignUp2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/inputPassword"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#0C134F"
+        android:text="Sign up"
+        android:textSize="16dp"
+        />
+
+    <TextView
+        android:id="@+id/teks14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or sign up with"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnSignUp2"
+        android:layout_marginTop="50dp"
+        android:textSize="16dp"
+        />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:backgroundTint="@color/black"
+        android:layout_below="@id/btnSignUp2"
+        android:layout_marginTop="62dp"
+        android:text="@string/app_name"
+        android:layout_toLeftOf="@+id/teks14"
+        android:layout_marginEnd="20dp"
+        />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:backgroundTint="@color/black"
+        android:layout_below="@id/btnSignUp2"
+        android:layout_marginTop="62dp"
+        android:text="@string/app_name"
+        android:layout_toRightOf="@+id/teks14"
+        android:layout_marginStart="20dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnApple2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/teks14"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:text="Continue with apple"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:backgroundTint="@color/white"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGoogle2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnApple2"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:text="Continue with Google"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:backgroundTint="@color/white"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp"
+        />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGoogle2"
+        android:layout_marginStart="60dp"
+        android:text="Don't want account?"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:textSize="13dp"
+        />
+
+    <Button
+        android:id="@+id/btnGuestMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGoogle2"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/btn"
+        android:text="Guest mode"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/blue"
+        android:layout_marginTop="40dp"
+        android:textSize="13dp"
+        android:layout_marginStart="-26dp"
+        />
+</RelativeLayout>
