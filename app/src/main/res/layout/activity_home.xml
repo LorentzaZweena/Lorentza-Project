@@ -121,6 +121,7 @@
             android:layout_marginTop="10dp"
             />
         <TextView
+            android:id="@+id/teks22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/svHome"
@@ -129,6 +130,123 @@
             android:textSize="16dp"
             android:layout_marginTop="10dp"
             android:textColor="#A2A2A2"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/teks23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/svHome"
+            android:text="Similiar"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#A2A2A2"
+            android:layout_toRightOf="@id/teks22"
+            android:layout_marginStart="50dp"
+            android:textStyle="bold"
+            />
+        <ScrollView
+            android:id="@+id/svRecently"
+            android:layout_width="match_parent"
+            android:layout_below="@id/teks21"
+            android:layout_marginTop="10dp"
+            android:layout_height="175dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rvRecently"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </ScrollView>
+        <ImageButton
+            android:id="@+id/ibHome"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_below="@id/svRecently"
+            android:src="@drawable/ic_home"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="40sp"
+            />
+        <ImageButton
+            android:id="@+id/ibFavorite"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_below="@id/svRecently"
+            android:src="@drawable/ic_favorite"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="70sp"
+            android:layout_toRightOf="@id/ibHome"
+            android:background="@color/white"
+            />
+        <ImageButton
+            android:id="@+id/ibTicket"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_below="@id/svRecently"
+            android:src="@drawable/ic_ticket"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="70sp"
+            android:layout_toRightOf="@id/ibFavorite"
+            android:background="@color/white"
+            />
+        <ImageButton
+            android:id="@+id/ibProfile"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_below="@id/svRecently"
+            android:src="@drawable/ic_profile"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="70sp"
+            android:layout_toRightOf="@id/ibTicket"
+            android:background="@color/white"
+            />
+        <TextView
+            android:id="@+id/teks25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:layout_below="@id/ibHome"
+            android:textSize="11dp"
+            android:textColor="@color/blue"
+            android:layout_marginStart="35sp"
+            android:layout_marginTop="3dp"
+            />
+        <TextView
+            android:id="@+id/teks26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favorite"
+            android:layout_below="@id/ibFavorite"
+            android:layout_toRightOf="@id/teks25"
+            android:textSize="11dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="57sp"
+            android:layout_marginTop="3dp"
+            />
+        <TextView
+            android:id="@+id/teks27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ticket"
+            android:layout_below="@id/ibFavorite"
+            android:layout_toRightOf="@id/teks26"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="52sp"
+            android:layout_marginTop="3dp"
+            />
+        <TextView
+            android:id="@+id/teks28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_below="@id/ibFavorite"
+            android:layout_toRightOf="@id/teks27"
+            android:textSize="11dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="58sp"
+            android:layout_marginTop="3dp"
             />
     </RelativeLayout>
 </LinearLayout>

@@ -5,7 +5,9 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lorentza.R
+import com.example.lorentza.suround.adapterr.RecentlyAdapter
 import com.example.lorentza.suround.adapter.TrendingAdapter
+import com.example.lorentza.suround.model.Recently
 import com.example.lorentza.suround.model.Trending
 
 class HomeActivity : AppCompatActivity() {
@@ -16,10 +18,10 @@ class HomeActivity : AppCompatActivity() {
         val rvHome:RecyclerView = findViewById(R.id.rvHome)
         val trending = arrayListOf<Trending>(
             Trending("Kill bill", R.drawable.image14),
-            Trending("Pretender", R.drawable.image15),
+            Trending("Pretender", R.drawable.image26),
             Trending("Moonlight", R.drawable.image16),
-            Trending("Matsuri", R.drawable.image17),
-            Trending("Lorentza", R.drawable.image18),
+            Trending("Matsuri", R.drawable.image25),
+            Trending("Lorentza", R.drawable.image23),
             Trending("Arterius", R.drawable.image19)
         )
         val adapter = TrendingAdapter(trending)
@@ -27,5 +29,20 @@ class HomeActivity : AppCompatActivity() {
 
         rvHome.adapter = adapter
         rvHome.layoutManager = linearHorizontal
+
+        val rvRecently:RecyclerView = findViewById(R.id.rvRecently)
+        val recently = arrayListOf<Recently>(
+            Recently("Single", R.drawable.image20),
+            Recently("Actions", R.drawable.image21),
+            Recently("Kindness?", R.drawable.image22),
+            Recently("Evening", R.drawable.image23),
+            Recently("Mistake", R.drawable.image24),
+            Recently("Ending", R.drawable.image25),
+        )
+       val adapterr = RecentlyAdapter(recently)
+        val linearVertical = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+
+        rvRecently.adapter = adapterr
+        rvRecently.layoutManager = linearVertical
     }
 }

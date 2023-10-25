@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Pelicia.OrientationActivity">
+
+    <ImageView
+        android:id="@+id/gambar8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image29"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125sp"
+        />
+
+    <TextView
+        android:id="@+id/teks29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gambar8"
+        android:layout_centerHorizontal="true"
+        android:text="Pelicia"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="36dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/teks30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/teks29"
+        android:text="Movie app"
+        android:textSize="20sp"
+        android:layout_marginTop="5sp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@id/teks30"
+        android:layout_marginTop="180dp"
+        app:cardCornerRadius="5dp"
+        android:backgroundTint="@color/red"
+        android:layout_height="280dp">
+
+        <TextView
+            android:id="@+id/teks31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="Enjoy your vacation time by watching various movies at Pelicia"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_marginTop="75sp"
+            android:layout_marginStart="30dp"
+            android:lineHeight="30dp"
+            />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="148dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="160dp"
+            android:layout_marginStart="40dp"
+            android:text="Login"
+            android:textSize="16dp"
+            />
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="148dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="160dp"
+            android:layout_marginStart="200dp"
+            android:text="Sign in"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

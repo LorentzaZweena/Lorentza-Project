@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Pelicia.SplashScronActivity">
+
+    <ImageView
+        android:id="@+id/bulet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image27"
+        android:layout_alignParentEnd="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image28"
+        android:layout_marginTop="20sp"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image29"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bulet"
+        android:layout_marginTop="65dp"
+        />
+
+    <TextView
+        android:id="@+id/teks29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:text="Pelicia"
+        android:textColor="@color/red"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks29"
+        android:layout_centerHorizontal="true"
+        android:text="Movie App"
+        android:textSize="20sp"
+        />
+</RelativeLayout>
