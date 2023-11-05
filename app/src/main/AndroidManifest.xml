@@ -13,6 +13,15 @@
         android:theme="@style/Theme.Lorentza"
         tools:targetApi="34">
         <activity
+            android:name="Pelicia.DashboardActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="Pelicia.NewAccountActivity"
             android:exported="false" />
         <activity
