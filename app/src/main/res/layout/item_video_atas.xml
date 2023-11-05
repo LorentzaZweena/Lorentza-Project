@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="297dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10sp"
+    android:layout_height="167dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/ibVideoAtas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image38"
+            />
+        <TextView
+            android:id="@+id/tvVideoAtas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pa poy : \nSeason 2"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:lineHeight="30dp"
+            android:textSize="20sp"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="105sp"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
