@@ -20,7 +20,7 @@ class OrientationActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btnSignIn.setOnClickListener {
-            val intent = Intent(this, LigonActivity::class.java)
+            val intent = Intent(this, NewAccountActivity::class.java)
             startActivity(intent)
         }
     }

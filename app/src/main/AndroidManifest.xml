@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Lorentza"
         tools:targetApi="34">
         <activity
+            android:name="Pelicia.NewAccountActivity"
+            android:exported="false" />
+        <activity
             android:name="Pelicia.LigonActivity"
             android:exported="false" />
         <activity

@@ -14,8 +14,6 @@ class LigonActivity : AppCompatActivity() {
         setContentView(R.layout.activity_ligon)
 
         val ibBackPutih : ImageButton = findViewById(R.id.ibBackPutih)
-        val ibGooglePelicia : ImageButton = findViewById(R.id.ibGooglePelicia)
-        val ibInstagram : ImageButton = findViewById(R.id.ibInstagram)
 
         ibBackPutih.setOnClickListener {
             val intent7 = Intent(this, OrientationActivity::class.java)
