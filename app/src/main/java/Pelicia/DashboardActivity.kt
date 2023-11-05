@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lorentza.R
 import com.example.lorentza.suround.adapter.VideoAtasAdapter
+import com.example.lorentza.suround.adapterr.PeliciaCategoriesAdapter
+import com.example.lorentza.suround.model.PeliciaCategories
 import com.example.lorentza.suround.model.VideoAtas
 
 class DashboardActivity : AppCompatActivity() {
@@ -14,7 +16,7 @@ class DashboardActivity : AppCompatActivity() {
         setContentView(R.layout.activity_dashboard)
 
         val rvDashBoardPelicia : RecyclerView = findViewById(R.id.rvDashboardPelicia)
-
+        val rvDashBoardPelicia2 : RecyclerView = findViewById(R.id.rvDashboardPelicia2)
 
 
         val VideoAtas = arrayListOf<VideoAtas>(
@@ -30,5 +32,17 @@ class DashboardActivity : AppCompatActivity() {
         val linearHorizontal = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         rvDashBoardPelicia.adapter = adapter
         rvDashBoardPelicia.layoutManager = linearHorizontal
+
+        val PeliciaCategories = arrayListOf<PeliciaCategories>(
+            PeliciaCategories("CATEGORIES", R.drawable.image45),
+            PeliciaCategories("TRENDING", R.drawable.image45),
+            PeliciaCategories("BOX OFFICE", R.drawable.image45),
+            PeliciaCategories("DISCOVER", R.drawable.image45)
+        )
+
+        val adapter2 = PeliciaCategoriesAdapter (PeliciaCategories)
+        val linearHorizontal2 = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        rvDashBoardPelicia2.adapter = adapter2
+        rvDashBoardPelicia2.layoutManager = linearHorizontal2
     }
 }
