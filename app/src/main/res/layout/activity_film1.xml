@@ -123,7 +123,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/teks44"
         android:src="@drawable/baseline_star_rate_24"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10sp"
         />
     <ImageView
         android:id="@+id/bintang2"
@@ -133,6 +134,7 @@
         android:src="@drawable/baseline_star_rate_24"
         android:layout_marginStart="10dp"
         android:layout_toRightOf="@id/bintang1"
+        android:layout_marginTop="10sp"
         />
     <ImageView
         android:id="@+id/bintang3"
@@ -142,6 +144,7 @@
         android:src="@drawable/baseline_star_rate_24"
         android:layout_marginStart="10dp"
         android:layout_toRightOf="@id/bintang2"
+        android:layout_marginTop="10sp"
         />
     <ImageView
         android:id="@+id/bintang4"
@@ -151,5 +154,61 @@
         android:src="@drawable/baseline_star_rate_24"
         android:layout_marginStart="10dp"
         android:layout_toRightOf="@id/bintang3"
+        android:layout_marginTop="10sp"
+        />
+    <ImageView
+        android:id="@+id/bintang5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks44"
+        android:src="@drawable/baseline_star_half_24"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/bintang4"
+        android:layout_marginTop="10sp"
+        />
+    <TextView
+        android:id="@+id/teks45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bintang1"
+        android:text="Country"
+        android:textSize="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/teks46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bintang1"
+        android:text="Year"
+        android:textSize="14dp"
+        android:layout_toLeftOf="@id/teks45"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80sp"
+        />
+    <TextView
+        android:id="@+id/teks47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bintang1"
+        android:text="Duration"
+        android:textSize="14dp"
+        android:layout_toRightOf="@id/teks45"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60sp"
+        />
+    <TextView
+        android:id="@+id/teks48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks46"
+        android:text="2020"
+        android:textSize="16dp"
+        android:layout_toLeftOf="@id/teks45"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="74sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         />
 </RelativeLayout>
