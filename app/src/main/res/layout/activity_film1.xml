@@ -238,6 +238,7 @@
         android:textStyle="bold"
         />
     <TextView
+        android:id="@+id/teks51"
         android:layout_width="320dp"
         android:layout_height="100dp"
         android:layout_below="@id/teks48"
@@ -246,6 +247,16 @@
         android:layout_marginStart="40dp"
         android:justificationMode="inter_word"
         android:layout_marginTop="20dp"
+        android:textColor="#969696"
+        />
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/teks51"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+        android:layout_marginStart="40dp"
+        android:lineHeight="25dp"
+        android:layout_marginTop="10dp"
         android:textColor="#969696"
         />
 </RelativeLayout>
