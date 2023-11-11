@@ -211,4 +211,41 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         />
+    <TextView
+        android:id="@+id/teks49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks45"
+        android:text="US"
+        android:textSize="16dp"
+        android:layout_toRightOf="@id/teks48"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/teks50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks45"
+        android:text="180 min"
+        android:textSize="16dp"
+        android:layout_toRightOf="@id/teks49"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="70sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/teks48"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
+        android:lineHeight="25dp"
+        android:layout_marginStart="40dp"
+        android:justificationMode="inter_word"
+        android:layout_marginTop="20dp"
+        android:textColor="#969696"
+        />
 </RelativeLayout>
