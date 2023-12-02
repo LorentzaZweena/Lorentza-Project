@@ -13,6 +13,28 @@
         android:theme="@style/Theme.Lorentza"
         tools:targetApi="34">
         <activity
+            android:name="SehatQ.OreoActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="SehatQ.SplahScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="SehatQ.Splah"
+            android:exported="false"
+            android:label="@string/title_activity_splah" />
+        <activity
             android:name="Pelicia.Film1Activity"
             android:exported="false" />
         <activity
@@ -35,15 +57,7 @@
             android:exported="false" />
         <activity
             android:name="Pelicia.SplashScronActivity"
-            android:exported="true" >
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".suround.HomeActivity"
             android:exported="false" />
@@ -73,6 +87,11 @@
         <activity
             android:name=".suround.SplashScreen"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

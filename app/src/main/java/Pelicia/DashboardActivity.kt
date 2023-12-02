@@ -2,8 +2,12 @@ package Pelicia
 
 import Pelicia.Adapterrr.PeliciaPopularAdapter
 import Pelicia.Lel.PremiumAdapter
+import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageButton
+import android.widget.ScrollView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lorentza.R
@@ -15,6 +19,7 @@ import com.example.lorentza.suround.model.Premium
 import com.example.lorentza.suround.model.VideoAtas
 
 class DashboardActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
@@ -25,6 +30,7 @@ class DashboardActivity : AppCompatActivity() {
         val rvDashBoardPelicia2 : RecyclerView = findViewById(R.id.rvDashboardPelicia2)
         val rvDashBoardPelicia3 : RecyclerView = findViewById(R.id.rvDashboardPelicia3)
         val rvDashBoardPelicia4 : RecyclerView = findViewById(R.id.rvDashboardPelicia4)
+        val svPelicia1 : ScrollView = findViewById(R.id.svPelicia1)
         // ----------------------- Declaration  --------------------------------- \\
 
 
@@ -102,5 +108,10 @@ class DashboardActivity : AppCompatActivity() {
         rvDashBoardPelicia4.adapter = adapter4
         rvDashBoardPelicia4.layoutManager = linearHorizontal4
         // ----------------------- Premium --------------------------------- \\
+
+        svPelicia1.setOnClickListener {
+            val intent78 = Intent(this, Film1Activity::class.java)
+            startActivity(intent78)
+        }
     }
 }
