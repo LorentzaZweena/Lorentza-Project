@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SehatQ.LogActivity">
+
+    <ImageView
+        android:id="@+id/gambar12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image61"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        />
+
+    <TextView
+        android:id="@+id/teks54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masuk"
+        android:layout_below="@id/gambar12"
+        android:textSize="30dp"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/teks55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks54"
+        android:text="Silakan masuk untuk melanjutkan"
+        android:textSize="17dp"
+        android:layout_marginStart="50sp"
+        android:textColor="@color/green"
+        android:layout_marginTop="9dp"
+        />
+
+    <EditText
+        android:id="@+id/etLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/teks55"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/image62"
+        android:drawableStart="@drawable/ic_email"
+        android:drawableTint="@color/green"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:drawablePadding="10dp"
+        android:paddingStart="20dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@id/etLogin"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        app:passwordToggleEnabled="true"
+        tools:layout_editor_absoluteX="24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image62"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:hint="Kata sandi"
+            android:textColorHint="#8A8A8A"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+</RelativeLayout>

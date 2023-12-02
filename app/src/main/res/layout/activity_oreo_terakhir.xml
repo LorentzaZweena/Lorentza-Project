@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/image60"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="95sp"
+        android:layout_marginTop="100sp"
         />
 
     <ImageView
@@ -84,7 +84,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_below="@+id/teks53"
-        android:layout_marginTop="30sp"
+        android:layout_marginTop="50sp"
         android:layout_marginStart="40dp"
         android:layout_centerHorizontal="true"
         android:layout_marginEnd="40dp"
