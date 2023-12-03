@@ -1,7 +1,10 @@
 package SehatQ
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -12,6 +15,7 @@ import com.example.lorentza.suround.model.Banner
 import com.example.lorentza.suround.model.Specialist
 
 class DashActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId", "ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dash)
@@ -29,6 +33,11 @@ class DashActivity : AppCompatActivity() {
 
         rvSehatQ.adapter = adapter
         rvSehatQ.layoutManager = linearHorizontal
+
+//        ivBanner.setOnClickListener {
+//            val intent = Intent(this, OreoActivity::class.java)
+//            startActivity(intent)
+//        }
 
         val rvSpecialist : RecyclerView = findViewById(R.id.rvSpecialist)
         val Specialist = arrayListOf<Specialist>(

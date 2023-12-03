@@ -38,12 +38,13 @@
             android:lineHeight="25dp"
             />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/ivBanner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/tvBanner2"
             android:src="@drawable/image69"
+            android:backgroundTint="#5EB1B3"
             android:scaleType="center"
             android:layout_marginEnd="12dp"
             />
