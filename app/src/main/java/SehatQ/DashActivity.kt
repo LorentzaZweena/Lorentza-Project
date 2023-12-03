@@ -7,7 +7,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lorentza.R
 import com.example.lorentza.suround.adapter.BannerAdapter
+import com.example.lorentza.suround.adapterr.SpecialistAdapter
 import com.example.lorentza.suround.model.Banner
+import com.example.lorentza.suround.model.Specialist
 
 class DashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,5 +29,21 @@ class DashActivity : AppCompatActivity() {
 
         rvSehatQ.adapter = adapter
         rvSehatQ.layoutManager = linearHorizontal
+
+        val rvSpecialist : RecyclerView = findViewById(R.id.rvSpecialist)
+        val Specialist = arrayListOf<Specialist>(
+            Specialist(R.drawable.image73),
+            Specialist(R.drawable.image74),
+            Specialist(R.drawable.image75),
+            Specialist(R.drawable.image78),
+            Specialist(R.drawable.image79),
+            Specialist(R.drawable.image80)
+        )
+
+        val adapter2 = SpecialistAdapter(Specialist)
+        val linearHorizontal2 = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL ,false)
+
+        rvSpecialist.adapter = adapter2
+        rvSpecialist.layoutManager = linearHorizontal2
     }
 }
