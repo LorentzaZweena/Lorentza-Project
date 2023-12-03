@@ -36,6 +36,7 @@
         android:layout_below="@id/gambar11"
         android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
+        android:layout_centerHorizontal="true"
         android:layout_toRightOf="@id/circle1"
         />
 

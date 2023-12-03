@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.lorentza.R
@@ -22,38 +23,54 @@ class LogActivity : AppCompatActivity() {
         var etLogin : EditText? = findViewById(R.id.etLogin)
         var inputPasswordSehatQ : EditText? = findViewById(R.id.inputPasswordSehatQ)
         var btnLoginSehatQ : Button = findViewById(R.id.btnLoginSehatQ)
-        var kosong : String
+        var ibGoogle : ImageButton = findViewById(R.id.ibGoogle)
+        var ibApple : ImageButton = findViewById(R.id.ibApple)
         val builder : AlertDialog.Builder = AlertDialog.Builder(this@LogActivity)
 
         btnLoginSehatQ.setOnClickListener {
             if (etLogin?.getText().toString().equals("zweena@gmail.com") && inputPasswordSehatQ?.getText().toString().equals("123")){
-                builder.setTitle("Selamat datang!")
-                builder.setMessage("Anda berhasil masuk")
+
+                //Kalo email dan password keisi trus bener
+
+                val intent9 = Intent(this, DashActivity::class.java)
+                startActivity(intent9)
+            } else if (etLogin?.getText().toString().equals("zweena@gmail.com") && inputPasswordSehatQ?.getText().toString().equals("")){
+                builder.setTitle("Perhatian")
+                builder.setMessage("Kata sandi tidak boleh kosong!")
                 builder.setCancelable(true)
 
-                                                                                    //Kalo email dan password keisi trus bener
+                //Kalo Passwordnya kosong
                 val alertDialog : AlertDialog = builder.create()
                 alertDialog.show()
-//              //Toast.LENGTH_LONG
 
-                val intent9 = Intent(this, OreoLagiActivity::class.java)
-                startActivity(intent9)
-            } else {
+            } else if (etLogin?.getText().toString().equals("") && inputPasswordSehatQ?.getText().toString().equals("123")){
                 builder.setTitle("Perhatian")
-                builder.setMessage("Mohon cek kembali!")
-                builder.setCancelable(false)
-                builder.setPositiveButton(
-                    "Oke", DialogInterface.OnClickListener { dialog, which ->
-                        kosong = ""
-                        etLogin?.setText("")
-                        inputPasswordSehatQ?.setText("")
-                    }
-                )
-                builder.setNegativeButton(
-                    "Batal", DialogInterface.OnClickListener { dialog, which ->
-                    }
-                )
+                builder.setMessage("Email tidak boleh kosong!")
+                builder.setCancelable(true)
+
+                //Kalo Email nya kosong
+
+                val alertDialog : AlertDialog = builder.create()
+                alertDialog.show()
+            } else if (etLogin?.getText().toString().equals("") && inputPasswordSehatQ?.getText().toString().equals("")){
+                builder.setTitle("Perhatian")
+                builder.setMessage("Isi bagian yang kosong terlebih dahulu")
+                builder.setCancelable(true)
+
+                //Kalo both kosong
+
+                val alertDialog : AlertDialog = builder.create()
+                alertDialog.show()
             }
+        }
+
+        ibGoogle.setOnClickListener {
+            val intent45 = Intent(this, DashActivity::class.java)
+            startActivity(intent45)
+        }
+        ibApple.setOnClickListener {
+            val intent46 = Intent(this, DashActivity::class.java)
+            startActivity(intent46)
         }
     }
 }
