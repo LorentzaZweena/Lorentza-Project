@@ -1,5 +1,6 @@
 package SehatQ
 
+import Pelicia.Adapterrr.RekomendasiDokterAdapter
 import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -12,6 +13,7 @@ import com.example.lorentza.R
 import com.example.lorentza.suround.adapter.BannerAdapter
 import com.example.lorentza.suround.adapterr.SpecialistAdapter
 import com.example.lorentza.suround.model.Banner
+import com.example.lorentza.suround.model.RekomendasiDokter
 import com.example.lorentza.suround.model.Specialist
 
 class DashActivity : AppCompatActivity() {
@@ -34,11 +36,6 @@ class DashActivity : AppCompatActivity() {
         rvSehatQ.adapter = adapter
         rvSehatQ.layoutManager = linearHorizontal
 
-//        ivBanner.setOnClickListener {
-//            val intent = Intent(this, OreoActivity::class.java)
-//            startActivity(intent)
-//        }
-
         val rvSpecialist : RecyclerView = findViewById(R.id.rvSpecialist)
         val Specialist = arrayListOf<Specialist>(
             Specialist(R.drawable.image73),
@@ -54,5 +51,19 @@ class DashActivity : AppCompatActivity() {
 
         rvSpecialist.adapter = adapter2
         rvSpecialist.layoutManager = linearHorizontal2
+
+        val rvRekomendasiDokter : RecyclerView = findViewById(R.id.rvRekomendasiDokter)
+        val RekomendasiDokter = arrayListOf<RekomendasiDokter>(
+            RekomendasiDokter(R.drawable.image81, "Dr. Isanamikô", "Kesehatan lansia", "Lihat Profile"),
+            RekomendasiDokter(R.drawable.image82, "Dr. Moriarôzi", "Masalah tidur", "Lihat Profile"),
+            RekomendasiDokter(R.drawable.image83, "Dr. Patisutatu", "Anak dan parenting", "Lihat Profile"),
+            RekomendasiDokter(R.drawable.image84, "Dr. Itumï", "Penyakit dalam", "Lihat Profile")
+        )
+
+        val adapter3 = RekomendasiDokterAdapter(RekomendasiDokter)
+        val linearHorizontal3 = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+
+        rvRekomendasiDokter.adapter = adapter3
+        rvRekomendasiDokter.layoutManager = linearHorizontal3
     }
 }

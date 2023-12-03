@@ -77,5 +77,39 @@
 
             </androidx.recyclerview.widget.RecyclerView>
         </ScrollView>
+
+        <TextView
+            android:id="@+id/teks58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rekomendasi dokter"
+            android:layout_below="@id/svSpecialist"
+            android:layout_marginTop="20sp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginStart="23sp"
+            />
+
+        <ScrollView
+            android:id="@+id/svRekomendasiDokter"
+            android:layout_width="317dp"
+            android:layout_below="@id/teks58"
+            android:layout_marginTop="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="255dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rvRekomendasiDokter"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </ScrollView>
+        <ImageButton
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_below="@id/svRekomendasiDokter"
+            android:background="@drawable/ic_home"
+            />
 </RelativeLayout>
 </LinearLayout>
