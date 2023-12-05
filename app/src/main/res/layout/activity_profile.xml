@@ -56,6 +56,7 @@
         />
 
     <TextView
+        android:id="@+id/teks60"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/gambar14"
@@ -67,4 +68,128 @@
         android:textStyle="bold"
         android:textColor="#5EB1B3"
         />
+
+    <TextView
+        android:id="@+id/teks61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dr. Isanamikô"
+        android:layout_below="@id/teks60"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="35sp"
+        android:layout_marginTop="12dp"
+        />
+
+    <ImageButton
+        android:id="@+id/ibLike"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/teks61"
+        android:layout_below="@id/teks60"
+        android:background="@drawable/stroke"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="-8dp"
+        android:src="@drawable/ic_favorite"
+        />
+
+    <ImageButton
+        android:id="@+id/ibLike2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/teks61"
+        android:layout_below="@id/teks60"
+        android:background="@drawable/stroke"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="-8dp"
+        android:src="@drawable/lel"
+        android:visibility="invisible"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="152dp"
+        android:id="@+id/cvExperience"
+        android:layout_below="@id/teks61"
+        android:layout_marginStart="38dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/stroke"
+        android:layout_height="70sp">
+
+        <ImageView
+            android:id="@+id/ivWork"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:src="@drawable/baseline_work_outline_24"
+            android:layout_marginStart="13sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/teks62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8 tahun"
+            android:layout_marginStart="40dp"
+            android:textSize="15dp"
+            android:layout_marginTop="9dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengalaman kerja"
+            android:layout_marginTop="40sp"
+            android:layout_marginStart="15dp"
+            android:textSize="12dp"
+            android:textColor="#828282"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="152dp"
+        android:id="@+id/cvRating"
+        android:layout_below="@id/teks61"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@id/cvExperience"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/stroke"
+        android:layout_height="70sp">
+
+        <ImageView
+            android:id="@+id/ivRating"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:src="@drawable/baseline_star_border_24"
+            android:layout_marginStart="13sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/teks63"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.8"
+            android:layout_marginStart="40dp"
+            android:textSize="15dp"
+            android:layout_marginTop="9dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/teks64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ulasan (1.360.000)"
+            android:layout_marginTop="40sp"
+            android:layout_marginStart="15dp"
+            android:textSize="12dp"
+            android:textColor="#828282"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
 </RelativeLayout>
