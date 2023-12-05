@@ -93,15 +93,14 @@
         android:src="@drawable/ic_favorite"
         />
 
-    <ImageButton
-        android:id="@+id/ibLike2"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+    <ImageView
+        android:id="@+id/ivLike"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_toRightOf="@+id/teks61"
         android:layout_below="@id/teks60"
-        android:background="@drawable/stroke"
-        android:layout_marginStart="165dp"
-        android:layout_marginTop="-8dp"
+        android:layout_marginStart="172.5dp"
+        android:layout_marginTop="-1dp"
         android:src="@drawable/lel"
         android:visibility="invisible"
         />
