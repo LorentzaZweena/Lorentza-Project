@@ -1,5 +1,7 @@
 package Pelicia.Adapterrr
 
+import SehatQ.ProfileActivity
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -26,5 +28,9 @@ class RekomendasiDokterAdapter(val data:ArrayList<RekomendasiDokter>):RecyclerVi
         holder.tvNamaRekomendasiDokter.text = item.nama
         holder.tvSpesialisRekomendasiDokter.text = item.specialist
         holder.tvProfileRekomendasiDokter.text = item.profile
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, ProfileActivity::class.java)
+            holder.itemView.context.startActivity(intent)
+        }
     }
 }
