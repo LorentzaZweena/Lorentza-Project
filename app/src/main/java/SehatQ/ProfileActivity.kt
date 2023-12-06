@@ -27,7 +27,7 @@ class ProfileActivity : AppCompatActivity() {
             val intent2 = Intent(Intent.ACTION_SEND)
             intent2.putExtra(Intent.EXTRA_TEXT, "Dokter Isanamikô ")
             intent2.setType("text/plain")
-            startActivity(Intent.createChooser(intent, "Bagikan ke : "))
+            startActivity(Intent.createChooser(intent2, "Bagikan ke : "))
         }
 
         ibBackSehatQ!!.setOnClickListener {

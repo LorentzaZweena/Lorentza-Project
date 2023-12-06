@@ -65,5 +65,12 @@ class DashActivity : AppCompatActivity() {
 
         rvRekomendasiDokter.adapter = adapter3
         rvRekomendasiDokter.layoutManager = linearHorizontal3
+
+        val ibChatSehatQ : ImageButton = findViewById(R.id.ibChatSehatQ)
+
+        ibChatSehatQ.setOnClickListener {
+            val intent = Intent(this, ChatActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

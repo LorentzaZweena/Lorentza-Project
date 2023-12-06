@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SehatQ.ChatActivity">
+
+    <TextView
+        android:id="@+id/teks70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat Dokter"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="35sp"
+        />
+
+    <ImageButton
+        android:id="@+id/ibProfileSehatQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image68"
+        android:layout_toRightOf="@id/teks70"
+        android:layout_marginTop="33sp"
+        android:layout_marginStart="170dp"
+        />
+
+    <TextView
+        android:id="@+id/teks71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Komunikasikan masalah \nanda"
+        android:layout_below="@id/teks70"
+        android:textSize="18dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="10sp"
+        android:textColor="#ACACAC"
+        android:lineHeight="25dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@id/teks71"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        android:id="@+id/cvSearchSehatQ"
+        app:cardCornerRadius="20sp"
+        android:layout_height="48dp">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Cari dokter"
+            android:background="@drawable/stroke"
+            android:drawableStart="@drawable/ic_search"
+            android:paddingStart="15dp"
+            android:drawablePadding="5dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="298dp"
+        android:id="@+id/svChat"
+        android:layout_below="@id/cvSearchSehatQ"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_height="450dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rvChat"
+            android:layout_height="match_parent">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </ScrollView>
+
+</RelativeLayout>
