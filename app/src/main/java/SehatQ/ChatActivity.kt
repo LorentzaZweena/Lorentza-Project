@@ -18,12 +18,12 @@ class ChatActivity : AppCompatActivity() {
         val Chat = arrayListOf<Chat>(
             Chat(R.drawable.image90, "Dr. Galla Acropolite", "Selamat siang!"),
             Chat(R.drawable.image91, "Dr. Myriam Féret", "Sama sama :)"),
-            Chat(R.drawable.image90, "Dr. Blaise Halphen", "Ok, kak"),
-            Chat(R.drawable.image90, "Dr. Galla Acropolite", "Selamat siang!"),
-            Chat(R.drawable.image90, "Dr. Abel Roatta", "Ooohh, baik. Kalau..."),
-            Chat(R.drawable.image90, "Dr. Ogesor Holm", "Kakak juga bisa...."),
+            Chat(R.drawable.image92, "Dr. Blaise Halphen", "Ok, kak"),
+            Chat(R.drawable.image93, "Dr. Galla Acropolite", "Selamat siang!"),
+            Chat(R.drawable.image94, "Dr. Abel Roatta", "Ooohh, baik. Kalau..."),
+            Chat(R.drawable.image95, "Dr. Ogesor Holm", "Kakak juga bisa...."),
             Chat(R.drawable.image90, "Dr. Graesen Sylas", "Saya boleh memberi..."),
-            Chat(R.drawable.image90, "Dr. Mullere Kibarra", "Selain itu, saya juga....")
+            Chat(R.drawable.image91, "Dr. Mullere Kibarra", "Selain itu, saya juga....")
         )
 
         val adapter = ChatAdapter(Chat)

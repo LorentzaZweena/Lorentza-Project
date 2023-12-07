@@ -1,5 +1,8 @@
 package com.example.lorentza.suround.adapter
 
+import SehatQ.ChatReadActivity
+import SehatQ.ProfileActivity
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,5 +31,10 @@ class ChatAdapter(val data : ArrayList<Chat>):RecyclerView.Adapter<ChatAdapter.C
         holder.ibDokter.setImageResource(item.image)
         holder.tvNamaDokter.text = item.NamaDokter
         holder.tvMessage.text = item.Message
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, ChatReadActivity::class.java)
+            holder.itemView.context.startActivity(intent)
+        }
     }
 }
