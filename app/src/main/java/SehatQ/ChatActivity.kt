@@ -1,7 +1,9 @@
 package SehatQ
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageButton
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lorentza.R
@@ -31,5 +33,11 @@ class ChatActivity : AppCompatActivity() {
 
         rvChat.adapter = adapter
         rvChat.layoutManager = linearVertical
+
+        val ibHomeSehatQ : ImageButton = findViewById(R.id.ibHomeSehatQ)
+        ibHomeSehatQ.setOnClickListener {
+            val intent = Intent(this, DashActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

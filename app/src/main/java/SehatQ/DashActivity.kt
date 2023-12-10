@@ -54,7 +54,7 @@ class DashActivity : AppCompatActivity() {
 
         val rvRekomendasiDokter : RecyclerView = findViewById(R.id.rvRekomendasiDokter)
         val RekomendasiDokter = arrayListOf<RekomendasiDokter>(
-            RekomendasiDokter(R.drawable.image81, "Dr. Isanamikô", "Kesehatan lansia", "Lihat Profile"),
+            RekomendasiDokter(R.drawable.image81, "Dr. Acropolite", "Spesialis Kecantikan", "Lihat Profile"),
             RekomendasiDokter(R.drawable.image82, "Dr. Moriarôzi", "Masalah tidur", "Lihat Profile"),
             RekomendasiDokter(R.drawable.image83, "Dr. Patisutatu", "Anak dan parenting", "Lihat Profile"),
             RekomendasiDokter(R.drawable.image84, "Dr. Itumï", "Penyakit dalam", "Lihat Profile")
@@ -67,7 +67,6 @@ class DashActivity : AppCompatActivity() {
         rvRekomendasiDokter.layoutManager = linearHorizontal3
 
         val ibChatSehatQ : ImageButton = findViewById(R.id.ibChatSehatQ)
-
         ibChatSehatQ.setOnClickListener {
             val intent = Intent(this, ChatActivity::class.java)
             startActivity(intent)

@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.Toast
@@ -25,7 +26,7 @@ class ProfileActivity : AppCompatActivity() {
 
         ibShareSehatQ.setOnClickListener {
             val intent2 = Intent(Intent.ACTION_SEND)
-            intent2.putExtra(Intent.EXTRA_TEXT, "Dokter Isanamikô ")
+            intent2.putExtra(Intent.EXTRA_TEXT, "Dr. Galla Acropolite")
             intent2.setType("text/plain")
             startActivity(Intent.createChooser(intent2, "Bagikan ke : "))
         }
@@ -51,6 +52,12 @@ class ProfileActivity : AppCompatActivity() {
                     this, "Ditambahkan ke favorit", Toast.LENGTH_SHORT
                 ).show()
             }
+        }
+
+        val btnChat: Button = findViewById(R.id.btnChat)
+        btnChat.setOnClickListener {
+            val intent = Intent(this, ChatReadActivity::class.java)
+            startActivity(intent)
         }
     }
 }
