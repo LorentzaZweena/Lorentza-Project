@@ -1,6 +1,7 @@
 package com.example.lorentza.suround.adapterr
 
 import SehatQ.ChatReadActivity
+import SehatQ.ShopDetailActivity
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
@@ -49,7 +50,7 @@ class RecommendAdapter(val data : ArrayList<Recommend>):RecyclerView.Adapter<Rec
         holder.tvHargaProdukR.text = item.hargaProdukR
 
         holder.itemView.setOnClickListener {
-            val intent = Intent(holder.itemView.context, ChatReadActivity::class.java)
+            val intent = Intent(holder.itemView.context, ShopDetailActivity::class.java)
             holder.itemView.context.startActivity(intent)
         }
     }
