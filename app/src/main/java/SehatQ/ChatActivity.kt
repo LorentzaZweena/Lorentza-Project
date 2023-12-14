@@ -45,5 +45,11 @@ class ChatActivity : AppCompatActivity() {
             val intent = Intent(this, ShopActivity::class.java)
             startActivity(intent)
         }
+
+        val ibHospitalSehatQ : ImageButton = findViewById(R.id.ibHospitalSehatQ)
+        ibHospitalSehatQ.setOnClickListener {
+            val intent = Intent(this, HospitalActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
