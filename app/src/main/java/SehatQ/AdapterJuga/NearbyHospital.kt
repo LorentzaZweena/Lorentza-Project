@@ -1,6 +1,7 @@
 package SehatQ.AdapterJuga
 
 import SehatQ.HospitalDetailActivity
+import SehatQ.NearbyActivity
 import SehatQ.modelJuga.Nearby
 import android.content.Intent
 import android.view.LayoutInflater
@@ -31,7 +32,7 @@ class NearbyHospital(val data : ArrayList<Nearby>) : RecyclerView.Adapter<Nearby
         holder.tvJalanNearby.text = item.jalanNearby
 
         holder.itemView.setOnClickListener {
-            val intent = Intent(holder.itemView.context, HospitalDetailActivity::class.java)
+            val intent = Intent(holder.itemView.context, NearbyActivity::class.java)
             holder.itemView.context.startActivity(intent)
         }
     }
