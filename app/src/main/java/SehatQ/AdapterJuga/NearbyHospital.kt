@@ -1,6 +1,8 @@
 package SehatQ.AdapterJuga
 
+import SehatQ.HospitalDetailActivity
 import SehatQ.modelJuga.Nearby
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -27,5 +29,10 @@ class NearbyHospital(val data : ArrayList<Nearby>) : RecyclerView.Adapter<Nearby
         holder.ivNearby.setImageResource(item.gambar)
         holder.tvNearby.text = item.namaNearby
         holder.tvJalanNearby.text = item.jalanNearby
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, HospitalDetailActivity::class.java)
+            holder.itemView.context.startActivity(intent)
+        }
     }
 }

@@ -1,5 +1,8 @@
 package com.example.lorentza.suround.adapterr
 
+import SehatQ.ChatReadActivity
+import SehatQ.HospitalDetailActivity
+import android.content.Intent
 import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
@@ -29,5 +32,10 @@ class HospitalAdapter(val data : ArrayList<Hospital>) : RecyclerView.Adapter<Hos
         holder.ivHospital.setImageResource(item.image)
         holder.tvNamaHospital.text = item.namaHospital
         holder.tvJalanHospital.text = item.jalanHospital
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, HospitalDetailActivity::class.java)
+            holder.itemView.context.startActivity(intent)
+        }
     }
 }
