@@ -126,7 +126,7 @@
         android:layout_below="@id/teks57"
         android:background="@drawable/image63"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="170dp"
+        android:layout_marginStart="165dp"
         />
 
     <ImageButton

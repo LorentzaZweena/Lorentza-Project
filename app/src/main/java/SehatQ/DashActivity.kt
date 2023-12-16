@@ -83,5 +83,11 @@ class DashActivity : AppCompatActivity() {
             val intent = Intent(this, HospitalActivity::class.java)
             startActivity(intent)
         }
+
+        val ibArtikelSehatQ : ImageButton = findViewById(R.id.ibArticleSehatQ)
+        ibArtikelSehatQ.setOnClickListener {
+            val intent = Intent(this, ArticleActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
