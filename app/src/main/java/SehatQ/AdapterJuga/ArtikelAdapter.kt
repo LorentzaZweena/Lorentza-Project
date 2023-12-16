@@ -1,6 +1,9 @@
 package SehatQ.AdapterJuga
 
+import SehatQ.ArticleReadActivity
+import SehatQ.NearbyActivity
 import SehatQ.modelJuga.Artikel
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,5 +31,10 @@ class ArtikelAdapter(val data : ArrayList<Artikel>) : RecyclerView.Adapter<Artik
         holder.ibArtikel.setImageResource(item.image)
         holder.tvJudulArtikel.text = item.judulArtikel
         holder.tvTopic.text = item.topic
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, ArticleReadActivity::class.java)
+            holder.itemView.context.startActivity(intent)
+        }
     }
 }

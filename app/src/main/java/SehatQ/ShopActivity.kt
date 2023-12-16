@@ -52,15 +52,21 @@ class ShopActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val ibShopSehatQ : ImageButton = findViewById(R.id.ibShopSehatQ)
-        ibShopSehatQ.setOnClickListener {
-            val intent = Intent(this, ShopActivity::class.java)
-            startActivity(intent)
-        }
+//        val ibShopSehatQ : ImageButton = findViewById(R.id.ibShopSehatQ)
+//        ibShopSehatQ.setOnClickListener {
+//            val intent = Intent(this, ShopActivity::class.java)
+//            startActivity(intent)
+//        }
 
         val ibHospitalSehatQ : ImageButton = findViewById(R.id.ibHospitalSehatQ)
         ibHospitalSehatQ.setOnClickListener {
             val intent = Intent(this, HospitalActivity::class.java)
+            startActivity(intent)
+        }
+
+        val ibHomeSehatQ : ImageButton = findViewById(R.id.ibHomeSehatQ)
+        ibHomeSehatQ.setOnClickListener {
+            val intent = Intent(this, DashActivity::class.java)
             startActivity(intent)
         }
     }

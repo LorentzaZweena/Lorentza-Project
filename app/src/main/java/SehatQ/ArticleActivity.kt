@@ -37,9 +37,9 @@ class ArticleActivity : AppCompatActivity() {
         val ArtikelJuga = arrayListOf<ArtikelJuga>(
             ArtikelJuga("Mental", "Tanda - tanda kesehatan \nmental tidak sehat", R.drawable.image130),
             ArtikelJuga("Lansia", "Tips pola hidup sehat untuk \nlansia", R.drawable.image131),
-            ArtikelJuga("Kesehatan", "10 langkah sederhana memulai \nhidup sehat", R.drawable.image132),
+            ArtikelJuga("Kesehatan", "10 langkah sederhana \nmemulai hidup sehat", R.drawable.image132),
             ArtikelJuga("Kecantikan", "Cara merawat kulit dengan \nsehat", R.drawable.image133),
-            ArtikelJuga("Masalah tidur", "Hal - hal yang dapat menjadi \nsusah tidur", R.drawable.image134),
+            ArtikelJuga("Masalah tidur", "Hal - hal yang dapat \nmenjadi susah tidur", R.drawable.image134),
             ArtikelJuga("Penyakit dalam", "Beberapa penyakit dalam \nyang harus di ketahui", R.drawable.image135)
         )
 

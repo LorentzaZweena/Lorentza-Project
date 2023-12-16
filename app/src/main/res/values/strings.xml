@@ -4,4 +4,13 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="article">
+        Tidur adalah suatu kegiatan yang menyenangkan dan menjadi favorit bagi banyak orang.
+        \n\nSelain itu, manfaat dari tidur adalah untuk mengisi tenaga yang telah hilang digunakan seharian berikut juga mendukung fungsi otak.
+        \n\n<b>1. Mendengkur</b>
+        \n\nSalah satu jenis gangguan tidur adalah mendengkur atau istilah lainnya adalah mengorok. Cara Mengatasi
+        \n\n- Mengubah posisi tidur. Karena dengkuran biasanya terjadi akibat posisi telentang saat tidur, maka tidur menyamping bisa dijadikan solusi.
+        \n\n- Mengangkat dan memosisikan kepala agak ke atas dengan menambah tumpukan bantal.
+        \n\n- Menurunkan berat badan dengan mengikuti diet sehat kalau memang mengalami kegemukan.
+    </string>
 </resources>

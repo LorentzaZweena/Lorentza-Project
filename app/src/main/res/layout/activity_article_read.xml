@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SehatQ.ArticleReadActivity">
+
+    <ImageView
+        android:id="@+id/gambar29"
+        android:layout_width="match_parent"
+        android:layout_height="220sp"
+        android:src="@drawable/image125"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageButton
+        android:id="@+id/ibBackSehatQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_back_white"
+        android:layout_marginTop="35sp"
+        android:layout_marginStart="35dp"
+        />
+
+    <TextView
+        android:id="@+id/teks103"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gambar29"
+        android:text="Masalah tidur"
+        android:background="@color/greenSehatQ"
+        android:textColor="@color/white"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        android:padding="10dp"
+        android:textSize="14dp"
+        />
+
+    <TextView
+        android:id="@+id/teks104"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks103"
+        android:text="Penyebab dan solusi masalah \ntidur"
+        android:textSize="24dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:lineHeight="35dp"
+        />
+
+    <ImageView
+        android:id="@+id/gambar30"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/image68"
+        android:layout_below="@id/teks104"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/teks105"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/gambar30"
+        android:layout_below="@id/teks104"
+        android:text="Enigma"
+        android:textSize="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <ScrollView
+        android:layout_width="325dp"
+        android:layout_below="@id/gambar30"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_height="310dp">
+
+        <TextView
+            android:id="@+id/teks106"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/article"
+            android:textSize="16dp"
+            android:justificationMode="inter_word"
+            android:lineHeight="24dp"
+            android:layout_marginTop="5dp"
+            />
+
+    </ScrollView>
+
+</RelativeLayout>
