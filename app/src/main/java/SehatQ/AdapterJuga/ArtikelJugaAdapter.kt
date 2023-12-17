@@ -1,9 +1,13 @@
 package SehatQ.AdapterJuga
 
+import SehatQ.ArticleReadActivity
+import SehatQ.ArticleRekomendationReadActivity
 import SehatQ.modelJuga.ArtikelJuga
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -13,7 +17,7 @@ class ArtikelJugaAdapter(val data: ArrayList<ArtikelJuga>) : RecyclerView.Adapte
     class ArtikelJugaViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val tvTopicJuga : TextView = view.findViewById(R.id.tvTopicJuga)
         val tvJudul : TextView = view.findViewById(R.id.tvJudul)
-        val ivArticle : ImageView = view.findViewById(R.id.ivArticle)
+        val ivArticle : ImageView = view.findViewById(R.id.ibArticle)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArtikelJugaViewHolder {
@@ -28,5 +32,10 @@ class ArtikelJugaAdapter(val data: ArrayList<ArtikelJuga>) : RecyclerView.Adapte
         holder.tvTopicJuga.text = item.topic
         holder.tvJudul.text = item.judul
         holder.ivArticle.setImageResource(item.gambar)
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, ArticleRekomendationReadActivity::class.java)
+            holder.itemView.context.startActivity(intent)
+        }
     }
 }

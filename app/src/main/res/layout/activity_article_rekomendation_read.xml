@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SehatQ.ArticleRekomendationReadActivity">
+
+    <ImageButton
+        android:id="@+id/ibBackSehatQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_back"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="30sp"
+        />
+
+    <ImageView
+        android:id="@+id/ivTime"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_toRightOf="@id/ibBackSehatQ"
+        android:src="@drawable/ic_time"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="180dp"
+        />
+
+    <TextView
+        android:id="@+id/teks107"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivTime"
+        android:text="3 hari yang lalu"
+        android:layout_marginTop="33dp"
+        android:textSize="14dp"
+        android:textColor="#ACACAC"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/teks108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibBackSehatQ"
+        android:text="Tanda - tanda kesehatan \nmental tidak sehat"
+        android:layout_marginStart="33sp"
+        android:textSize="24sp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:lineHeight="35dp"
+        />
+
+    <ImageView
+        android:id="@+id/gambar31"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_below="@id/teks108"
+        android:src="@drawable/image130"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginTop="20sp"
+        />
+
+    <ImageView
+        android:id="@+id/gambar32"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/image68"
+        android:layout_below="@id/gambar31"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="12sp"
+        />
+
+    <TextView
+        android:id="@+id/teks109"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/gambar32"
+        android:layout_below="@id/gambar31"
+        android:text="Confraternité"
+        android:textSize="13dp"
+        android:layout_marginTop="17sp"
+        android:layout_marginStart="10dp"
+        />
+
+    <ScrollView
+        android:id="@+id/svArtikelReadRecommendation"
+        android:layout_width="320dp"
+        android:layout_marginStart="40sp"
+        android:layout_below="@id/gambar32"
+        android:layout_marginTop="10dp"
+        android:layout_height="300dp">
+
+        <TextView
+            android:id="@+id/teks110"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/article_recommendation"
+            android:justificationMode="inter_word"
+            android:lineHeight="25dp"
+            />
+
+    </ScrollView>
+
+</RelativeLayout>
