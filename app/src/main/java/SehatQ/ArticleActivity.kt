@@ -71,5 +71,11 @@ class ArticleActivity : AppCompatActivity() {
             val intent = Intent(this, DashActivity::class.java)
             startActivity(intent)
         }
+
+        val ibProfileSehatQ : ImageButton = findViewById(R.id.ibProfileSehatQ)
+        ibProfileSehatQ.setOnClickListener {
+            val intent = Intent(this, ProfileSehatQActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

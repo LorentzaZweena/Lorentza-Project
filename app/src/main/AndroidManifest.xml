@@ -13,13 +13,24 @@
         android:theme="@style/Theme.Lorentza"
         tools:targetApi="34">
         <activity
-            android:name="SehatQ.ArticleRekomendationReadActivity"
+            android:name="SehatQ.ProfileSehatQActivity"
             android:exported="true">
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
 
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name="SehatQ.ArticleRekomendationReadActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name="SehatQ.ArticleReadActivity"
