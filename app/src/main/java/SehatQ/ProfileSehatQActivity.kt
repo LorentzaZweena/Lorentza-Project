@@ -17,7 +17,7 @@ class ProfileSehatQActivity : AppCompatActivity() {
         val ibBackSehatQ: ImageButton = findViewById(R.id.ibBackSehatQ)
 
         ibBackSehatQ.setOnClickListener {
-            val intent = Intent(this, ArticleActivity::class.java)
+            val intent = Intent(this, DashActivity::class.java)
             startActivity(intent)
         }
     }
