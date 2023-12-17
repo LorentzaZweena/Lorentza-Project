@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="186dp"
+    android:layout_marginStart="10dp"
+    android:layout_height="180dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image113"
+            />
+
+        <TextView
+            android:id="@+id/tvNamaHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivHospital"
+            android:text="RS PMI Bogor"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tvJalanHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNamaHospital"
+            android:text="Jl. Raya Pajajaran No.80"
+            android:layout_marginStart="8dp"
+            android:textSize="13dp"
+            android:textColor="#7F7F7F"
+            android:layout_marginTop="5dp"
+            />
+
+    </RelativeLayout>
+
+    
+
+</androidx.cardview.widget.CardView>

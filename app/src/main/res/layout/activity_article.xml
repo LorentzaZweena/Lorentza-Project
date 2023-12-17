@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SehatQ.ArticleActivity">
+
+    <TextView
+        android:id="@+id/teks100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Artikel"
+        android:layout_marginTop="35sp"
+        android:layout_marginStart="40sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/teks101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks100"
+        android:textSize="18dp"
+        android:text="Temukan berbagai artikel \nmenarik di sini"
+        android:layout_marginStart="39sp"
+        android:layout_marginTop="10dp"
+        android:lineHeight="28sp"
+        android:textColor="#ACACAC"
+        />
+
+    <ImageButton
+        android:id="@+id/ibProfileSehatQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image68"
+        android:layout_toRightOf="@id/teks100"
+        android:layout_marginTop="37dp"
+        android:layout_marginStart="220dp"
+        />
+
+    <ScrollView
+        android:layout_width="344dp"
+        android:id="@+id/svArtikel"
+        android:layout_below="@id/teks101"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_height="205dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rvArtikel"
+            android:layout_height="match_parent">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </ScrollView>
+    <TextView
+        android:id="@+id/teks102"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Rekomendasi"
+        android:layout_below="@id/svArtikel"
+        android:layout_marginStart="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+    
+    <ScrollView
+        android:id="@+id/svArtikelRekomendasi"
+        android:layout_width="320dp"
+        android:layout_below="@id/teks102"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="280dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rvArtikelRekomendasi"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </ScrollView>
+    <ImageButton
+        android:id="@+id/ibHomeSehatQ"
+        android:layout_width="24sp"
+        android:layout_height="24sp"
+        android:layout_below="@id/svArtikelRekomendasi"
+        android:background="@drawable/ic_home"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="70sp"
+        android:backgroundTint="#D3D3D3"
+        />
+    <ImageButton
+        android:id="@+id/ibChatSehatQ"
+        android:layout_width="17sp"
+        android:layout_height="17sp"
+        android:layout_below="@id/svArtikelRekomendasi"
+        android:background="@drawable/image85"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="35sp"
+        android:backgroundTint="#D3D3D3"
+        android:layout_toRightOf="@id/ibHomeSehatQ"
+        />
+
+    <ImageButton
+        android:id="@+id/ibShopSehatQ"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_below="@id/svArtikelRekomendasi"
+        android:background="@drawable/baseline_shopping_bag_24"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="35sp"
+        android:backgroundTint="#D3D3D3"
+        android:layout_toRightOf="@id/ibChatSehatQ"
+        />
+
+    <ImageButton
+        android:id="@+id/ibHospitalSehatQ"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_below="@id/svArtikelRekomendasi"
+        android:background="@drawable/image86"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="35sp"
+        android:backgroundTint="#D3D3D3"
+        android:layout_toRightOf="@id/ibShopSehatQ"
+        />
+
+    <ImageButton
+        android:id="@+id/ibArticleSehatQ"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_below="@id/svArtikelRekomendasi"
+        android:background="@drawable/baseline_article_24"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="35sp"
+        android:backgroundTint="#5EB1B3"
+        android:layout_toRightOf="@id/ibHospitalSehatQ"
+        />
+
+</RelativeLayout>

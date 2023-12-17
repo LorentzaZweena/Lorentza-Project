@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="SehatQ.OreoActivity">
+
+    <ImageView
+        android:id="@+id/gambar11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image58"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95sp"
+        />
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/stroke"
+        android:backgroundTint="#214955"
+        android:layout_below="@id/gambar11"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="145dp"
+        />
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/stroke"
+        android:backgroundTint="#D9D9D9"
+        android:layout_below="@id/gambar11"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/circle1"
+        />
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/stroke"
+        android:backgroundTint="#D9D9D9"
+        android:layout_below="@id/gambar11"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_toRightOf="@id/circle2"
+        />
+
+    <TextView
+        android:id="@+id/teks52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/circle1"
+        android:text="Riwayat \nKonsultasi"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        android:textAlignment="center"
+        android:lineHeight="35sp"
+        />
+
+    <TextView
+        android:id="@+id/teks53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setiap riwayat chat dan catatan \ndokter selalu tersimpan rapi"
+        android:layout_below="@id/teks52"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:textColor="#8E8E8E"
+        android:textAlignment="center"
+        android:layout_marginTop="20sp"
+        android:lineHeight="30dp"
+        />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/teks53"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#214955"
+        android:text="Selanjutnya"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+</RelativeLayout>

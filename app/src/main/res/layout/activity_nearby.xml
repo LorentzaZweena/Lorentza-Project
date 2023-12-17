@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SehatQ.NearbyActivity">
+
+    <ImageView
+        android:id="@+id/gambar21"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image124"
+        />
+
+    <ImageButton
+        android:id="@+id/ibBackSehatQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bulet"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/teks94"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RS Teungku"
+        android:layout_below="@id/gambar21"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="35sp"
+        android:layout_marginTop="20sp"
+        />
+
+    <TextView
+        android:id="@+id/teks95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Umum"
+        android:layout_below="@id/teks94"
+        android:textSize="16sp"
+        android:layout_marginStart="35sp"
+        android:layout_marginTop="10sp"
+        />
+
+    <ImageButton
+        android:id="@+id/ibCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gambar21"
+        android:layout_toRightOf="@id/teks94"
+        android:src="@drawable/baseline_location_on_24_putih"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="170dp"
+        android:background="@drawable/bulet"
+        android:backgroundTint="@color/greenSehatQ"
+        android:padding="9dp"
+        />
+
+    <TextView
+        android:id="@+id/teks96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks95"
+        android:text="Rumah Sakit Umum Daerah Teungku Peukan, atau dikenal sebagai RSUD Teungku Peukan, merupakan rumah sakit umum yang terletak di Blang Pidie, Aceh Barat Daya, Provinsi Nanggroe Aceh Darussalam."
+        android:layout_marginStart="35sp"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:justificationMode="inter_word"
+        android:layout_marginEnd="55dp"
+        android:lineHeight="30dp"
+        android:textColor="#ACACAC"
+        />
+
+    <TextView
+        android:id="@+id/teks97"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks96"
+        android:layout_marginStart="33dp"
+        android:text="Ulasan"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15sp"
+        />
+
+    <ImageView
+        android:id="@+id/gambar22"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/teks97"
+        android:src="@drawable/image68"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/teks98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks97"
+        android:layout_marginStart="15dp"
+        android:text="TempeBakso"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="18sp"
+        android:layout_toRightOf="@id/gambar22"
+        />
+
+    <ImageView
+        android:id="@+id/gambar23"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:src="@drawable/baseline_star_rate_24_kuning"
+        android:layout_below="@id/teks98"
+        android:layout_toRightOf="@id/gambar22"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/gambar24"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:src="@drawable/baseline_star_rate_24_kuning"
+        android:layout_below="@id/teks98"
+        android:layout_toRightOf="@id/gambar23"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/gambar25"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:src="@drawable/baseline_star_rate_24_kuning"
+        android:layout_below="@id/teks98"
+        android:layout_toRightOf="@id/gambar24"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/gambar26"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:src="@drawable/baseline_star_rate_24_kuning"
+        android:layout_below="@id/teks98"
+        android:layout_toRightOf="@id/gambar25"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/gambar27"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:src="@drawable/baseline_star_rate_24_kuning"
+        android:layout_below="@id/teks98"
+        android:layout_toRightOf="@id/gambar26"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/teks99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gambar27"
+        android:text="Para susternya sangat ramah dan fasilitas \nnya rapih"
+        android:layout_marginStart="87sp"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:lineHeight="25dp"
+        android:textColor="#ACACAC"
+        />
+
+    <ImageView
+        android:id="@+id/gambar28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image88"
+        android:layout_below="@id/teks99"
+        android:layout_marginTop="20sp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/gambar28"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/greenSehatQ"
+        android:text="Buat janji temu"
+        android:textSize="18sp"
+        />
+</RelativeLayout>

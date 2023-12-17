@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="316dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_height="205dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivArtikel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/image125"
+            />
+
+        <TextView
+            android:id="@+id/tvJudulArtikel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penyebab dan solusi \nmasalah tidur"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="130dp"
+            android:layout_marginStart="20sp"
+            android:lineHeight="30sp"
+            />
+
+        <TextView
+            android:id="@+id/tvTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masalah tidur"
+            android:textColor="@color/white"
+            android:background="@color/greenSehatQ"
+            android:padding="6dp"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="25sp"
+            android:textSize="13dp"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

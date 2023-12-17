@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SehatQ.ShopActivity">
+
+    <EditText
+        android:id="@+id/etSearchSehatQ"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke"
+        android:drawableStart="@drawable/ic_search"
+        android:hint="Cari produk"
+        android:padding="10dp"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="30sp"
+        android:drawableTint="#D0D0D0"
+        android:drawablePadding="5dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="48dp"
+        android:layout_toRightOf="@id/etSearchSehatQ"
+        android:backgroundTint="#5EB1B3"
+        android:layout_marginTop="35sp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginStart="20sp"
+        android:layout_height="48dp">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/image97"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="9dp"
+            />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/teks72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Produk populer"
+        android:layout_below="@id/etSearchSehatQ"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="20sp"
+        />
+    <ScrollView
+        android:id="@+id/svProduct1"
+        android:layout_width="330dp"
+        android:layout_below="@id/teks72"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="10dp"
+        android:layout_height="115dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rvProduct1"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rekomendasi"
+        android:layout_below="@id/svProduct1"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/teks73"
+        android:layout_marginStart="27sp"
+        android:layout_marginTop="20sp"
+        />
+    
+    <ScrollView
+        android:id="@+id/svProduct2"
+        android:layout_width="330dp"
+        android:layout_below="@id/teks73"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="15dp"
+        android:layout_height="365dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rvProduct2"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </ScrollView>
+    <ImageButton
+        android:id="@+id/ibHomeSehatQ"
+        android:layout_width="24sp"
+        android:layout_height="24sp"
+        android:layout_below="@id/svProduct2"
+        android:background="@drawable/ic_home"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="70sp"
+        android:backgroundTint="#D3D3D3"
+        />
+    <ImageButton
+        android:id="@+id/ibChatSehatQ"
+        android:layout_width="17sp"
+        android:layout_height="17sp"
+        android:layout_below="@id/svProduct2"
+        android:background="@drawable/image85"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="35sp"
+        android:backgroundTint="#D3D3D3"
+        android:layout_toRightOf="@id/ibHomeSehatQ"
+        />
+
+    <ImageButton
+        android:id="@+id/ibShopSehatQ"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_below="@id/svProduct2"
+        android:background="@drawable/baseline_shopping_bag_24"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="35sp"
+        android:backgroundTint="#5EB1B3"
+        android:layout_toRightOf="@id/ibChatSehatQ"
+        />
+
+    <ImageButton
+        android:id="@+id/ibHospitalSehatQ"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_below="@id/svProduct2"
+        android:background="@drawable/image86"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="35sp"
+        android:backgroundTint="#D3D3D3"
+        android:layout_toRightOf="@id/ibShopSehatQ"
+        />
+
+    <ImageButton
+        android:id="@+id/ibArticleSehatQ"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_below="@id/svProduct2"
+        android:background="@drawable/baseline_article_24"
+        android:layout_marginTop="23dp"
+        android:layout_marginStart="35sp"
+        android:backgroundTint="#D3D3D3"
+        android:layout_toRightOf="@id/ibHospitalSehatQ"
+        />
+</RelativeLayout>

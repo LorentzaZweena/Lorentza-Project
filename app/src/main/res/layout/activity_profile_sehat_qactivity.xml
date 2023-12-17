@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SehatQ.ProfileSehatQActivity">
+
+    <ImageView
+        android:id="@+id/gambar33"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/image136"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageButton
+        android:id="@+id/ibBackSehatQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_back_white"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="30dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/gambar33"
+        app:cardCornerRadius="50sp"
+        android:layout_marginTop="-60dp"
+        android:layout_height="600dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crique du Hendharto"
+            android:textSize="20dp"
+            android:layout_marginTop="55sp"
+            android:layout_marginStart="107dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indonesia, Jakarta"
+            android:textSize="14dp"
+            android:layout_marginTop="90sp"
+            android:layout_marginStart="140dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mengejar mimpi dan menghindari \nkenyataan"
+            android:layout_marginStart="80dp"
+            android:textSize="16dp"
+            android:layout_marginTop="123dp"
+            android:textAlignment="center"
+            android:lineHeight="30sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="195dp"
+            android:text="Edit Profil"
+            android:layout_marginStart="137dp"
+            android:backgroundTint="@color/greenSehatQ"
+            android:textSize="16dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image88"
+            android:layout_marginTop="270sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="290dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mengikuti"
+            android:textSize="15dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="320dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.5 jt"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="290dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengikut"
+            android:textSize="15dp"
+            android:layout_marginStart="285dp"
+            android:layout_marginTop="320dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image88"
+            android:layout_marginTop="370sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Postingan"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="390dp"
+            />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/baseline_photo_camera_24"
+            android:layout_marginStart="175sp"
+            android:layout_marginTop="432dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum ada post"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="500dp"
+            android:textColor="#C1BDBD"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:id="@+id/gambar44"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="700sp"
+        android:layout_marginTop="105dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/image137"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="40dp"
+        app:cardCornerRadius="100sp"
+        android:backgroundTint="#f5f5f5"
+        android:layout_marginTop="360dp"
+        android:layout_marginStart="275dp"
+        android:layout_height="40dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_share_24"
+            android:layout_marginStart="7sp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/greenSehatQ"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="45dp"
+        android:id="@+id/cvLog"
+        app:cardCornerRadius="100sp"
+        android:backgroundTint="#f5f5f5"
+        android:layout_marginTop="358dp"
+        android:layout_marginStart="70dp"
+        android:layout_height="45dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_logout_24"
+            android:layout_marginStart="13sp"
+            android:layout_marginTop="11dp"
+            android:backgroundTint="@color/greenSehatQ"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

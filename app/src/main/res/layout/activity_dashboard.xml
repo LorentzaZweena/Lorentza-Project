@@ -94,7 +94,7 @@
                 android:background="@drawable/ic_arrow"
                 android:layout_toRightOf="@id/teks36"
                 android:layout_marginTop="380dp"
-                android:layout_marginStart="160dp"
+                android:layout_marginStart="150dp"
                 />
             <ScrollView
                 android:id="@+id/svPelicia3"
@@ -128,7 +128,7 @@
                 android:background="@drawable/ic_arrow"
                 android:layout_toRightOf="@id/teks37"
                 android:layout_marginTop="227dp"
-                android:layout_marginStart="225dp"
+                android:layout_marginStart="215dp"
                 android:layout_below="@id/ibArrow"
                 />
 

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SehatQ.DashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/gambar13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image65"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <ImageButton
+        android:id="@+id/ibCart"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:background="@drawable/image66"
+        android:layout_toRightOf="@id/gambar13"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="100dp"
+        />
+
+    <ImageButton
+        android:id="@+id/ibNotifSehatQ"
+        android:layout_width="17sp"
+        android:layout_height="20sp"
+        android:background="@drawable/image67"
+        android:layout_toRightOf="@id/ibCart"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="20dp"
+        />
+
+    <ImageButton
+        android:id="@+id/ibProfileSehatQ"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:background="@drawable/image68"
+        android:layout_toRightOf="@id/ibNotifSehatQ"
+        android:layout_marginTop="37sp"
+        android:layout_marginStart="20dp"
+        />
+        
+        <ScrollView
+            android:id="@+id/svSehatQ"
+            android:layout_width="match_parent"
+            android:layout_below="@id/gambar13"
+            android:layout_marginTop="13dp"
+            android:layout_height="177dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rvSehatQ"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/svSpecialist"
+            android:layout_width="match_parent"
+            android:layout_below="@id/svSehatQ"
+            android:layout_marginTop="20dp"
+            android:layout_height="80dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rvSpecialist"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/teks58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rekomendasi dokter"
+            android:layout_below="@id/svSpecialist"
+            android:layout_marginTop="20sp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginStart="23sp"
+            />
+
+        <ScrollView
+            android:id="@+id/svRekomendasiDokter"
+            android:layout_width="317dp"
+            android:layout_below="@id/teks58"
+            android:layout_marginTop="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="255dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rvRekomendasiDokter"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </ScrollView>
+        <ImageButton
+            android:id="@+id/ibHomeSehatQ"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:layout_below="@id/svRekomendasiDokter"
+            android:background="@drawable/ic_home"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="70sp"
+            android:backgroundTint="#5EB1B3"
+            />
+        <ImageButton
+            android:id="@+id/ibChatSehatQ"
+            android:layout_width="17sp"
+            android:layout_height="17sp"
+            android:layout_below="@id/svRekomendasiDokter"
+            android:background="@drawable/image85"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="35sp"
+            android:backgroundTint="#D3D3D3"
+            android:layout_toRightOf="@id/ibHomeSehatQ"
+            />
+
+        <ImageButton
+            android:id="@+id/ibShopSehatQ"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_below="@id/svRekomendasiDokter"
+            android:background="@drawable/baseline_shopping_bag_24"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="35sp"
+            android:backgroundTint="#D3D3D3"
+            android:layout_toRightOf="@id/ibChatSehatQ"
+            />
+
+        <ImageButton
+            android:id="@+id/ibHospitalSehatQ"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_below="@id/svRekomendasiDokter"
+            android:background="@drawable/image86"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="35sp"
+            android:backgroundTint="#D3D3D3"
+            android:layout_toRightOf="@id/ibShopSehatQ"
+            />
+
+        <ImageButton
+            android:id="@+id/ibArticleSehatQ"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_below="@id/svRekomendasiDokter"
+            android:background="@drawable/baseline_article_24"
+            android:layout_marginTop="23dp"
+            android:layout_marginStart="35sp"
+            android:backgroundTint="#D3D3D3"
+            android:layout_toRightOf="@id/ibHospitalSehatQ"
+            />
+</RelativeLayout>
+</LinearLayout>

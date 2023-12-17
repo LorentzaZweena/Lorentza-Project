@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlAtas"
+    android:background="@color/greenSehatQ"
+    tools:context="SehatQ.HospitalActivity">
+
+    <ImageButton
+        android:id="@+id/ibLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baseline_location_on_24"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="50sp"
+        android:layout_marginStart="30sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lokasi anda"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/ibLoc"
+        android:layout_marginTop="47sp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/teks81"
+        />
+
+    <TextView
+        android:id="@+id/teks82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bogor, Indonesia"
+        android:layout_below="@id/teks81"
+        android:layout_marginStart="35sp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image112"
+        android:layout_toRightOf="@id/teks82"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/ivNotif"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="319dp"
+        android:layout_below="@id/teks82"
+        android:layout_marginStart="35dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginTop="25sp"
+        android:backgroundTint="#6ED2D4"
+        android:layout_height="48dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/stroke"
+            android:backgroundTint="#6ED2D4"
+            android:drawableStart="@drawable/ic_search"
+            android:hint="Cari rumah sakit"
+            android:padding="10dp"
+            android:drawablePadding="5dp"
+            android:drawableTint="#4D9193"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="205dp"
+        android:layout_height="600dp">
+
+        <TextView
+            android:id="@+id/teks83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Untuk anda"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="20sp"
+            />
+        
+        <ScrollView
+            android:layout_width="335dp"
+            android:layout_below="@id/teks83"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/svHospital"
+            android:layout_height="180dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rvHospital"
+                android:layout_height="match_parent">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </ScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/svHospital"
+            android:text="Rumah sakit terdekat"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/teks84"
+            />
+        
+        <ScrollView
+            android:layout_width="335dp"
+            android:layout_below="@id/teks84"
+            android:id="@+id/svNearby"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_height="205dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rvNearby"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </ScrollView>
+        <ImageButton
+            android:id="@+id/ibHomeSehatQ"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:layout_below="@id/svNearby"
+            android:background="@drawable/ic_home"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="70sp"
+            android:backgroundTint="#D3D3D3"
+            />
+        <ImageButton
+            android:id="@+id/ibChatSehatQ"
+            android:layout_width="17sp"
+            android:layout_height="17sp"
+            android:layout_below="@id/svNearby"
+            android:background="@drawable/image85"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="35sp"
+            android:backgroundTint="#D3D3D3"
+            android:layout_toRightOf="@id/ibHomeSehatQ"
+            />
+
+        <ImageButton
+            android:id="@+id/ibShopSehatQ"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_below="@id/svNearby"
+            android:background="@drawable/baseline_shopping_bag_24"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="35sp"
+            android:backgroundTint="#D3D3D3"
+            android:layout_toRightOf="@id/ibChatSehatQ"
+            />
+
+        <ImageButton
+            android:id="@+id/ibHospitalSehatQ"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_below="@id/svNearby"
+            android:background="@drawable/image86"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="35sp"
+            android:backgroundTint="#5EB1B3"
+            android:layout_toRightOf="@id/ibShopSehatQ"
+            />
+
+        <ImageButton
+            android:id="@+id/ibArticleSehatQ"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_below="@id/svNearby"
+            android:background="@drawable/baseline_article_24"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="35sp"
+            android:backgroundTint="#D3D3D3"
+            android:layout_toRightOf="@id/ibHospitalSehatQ"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

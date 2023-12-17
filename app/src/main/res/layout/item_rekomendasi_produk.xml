@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="147dp"
+        android:id="@+id/cvRecomP1"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#EEEEEE"
+        android:layout_marginTop="7dp"
+        android:layout_height="202dp">
+
+        <ImageView
+            android:id="@+id/ivProdukL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image104"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="14dp"
+            />
+
+        <TextView
+            android:id="@+id/tvNamaProdukL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nature made"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginTop="118dp"
+            android:layout_marginStart="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vitamin"
+            android:layout_marginTop="145dp"
+            android:layout_marginStart="15dp"
+            android:textSize="14dp"
+            android:id="@+id/tvJenisProdukL"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp35.000"
+            android:layout_marginTop="170dp"
+            android:layout_marginStart="15dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:id="@+id/tvHargaProdukL"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="147dp"
+        android:id="@+id/cvRecomP2"
+        app:cardCornerRadius="10dp"
+        android:layout_toRightOf="@id/cvRecomP1"
+        android:backgroundTint="#EEEEEE"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="202dp">
+
+        <ImageView
+            android:id="@+id/ivProdukR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image105"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="14dp"
+            />
+
+        <TextView
+            android:id="@+id/tvNamaProdukR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jamieson E"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginTop="118dp"
+            android:layout_marginStart="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vitamin"
+            android:layout_marginTop="145dp"
+            android:layout_marginStart="15dp"
+            android:textSize="14dp"
+            android:id="@+id/tvJenisProdukR"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp23.000"
+            android:layout_marginTop="170dp"
+            android:layout_marginStart="15dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:id="@+id/tvHargaProdukR"
+            />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

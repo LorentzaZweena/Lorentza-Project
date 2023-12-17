@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SehatQ.HospitalDetailActivity">
+
+    <ImageButton
+        android:id="@+id/ibBackSehatQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_back"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <ImageButton
+        android:id="@+id/filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baseline_filter_list_24"
+        android:layout_toRightOf="@id/ibBackSehatQ"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="280dp"
+        />
+
+    <ImageView
+        android:id="@+id/gambar18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image123"
+        android:layout_below="@id/ibBackSehatQ"
+        android:layout_marginStart="35sp"
+        android:layout_marginTop="35sp"
+        />
+
+    <TextView
+        android:id="@+id/teks85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RS PMI Bogor"
+        android:layout_toRightOf="@id/gambar18"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_below="@id/filter"
+        android:layout_marginTop="45sp"
+        android:layout_marginStart="20sp"
+        />
+
+    <TextView
+        android:id="@+id/teks86"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Swasta"
+        android:layout_below="@id/teks85"
+        android:layout_toRightOf="@id/gambar18"
+        android:textSize="16dp"
+        android:textColor="#828282"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/gambar19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_star_border_24"
+        android:layout_below="@id/teks86"
+        android:layout_toRightOf="@id/gambar18"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/teks87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/gambar19"
+        android:layout_below="@id/teks86"
+        android:text="4.7"
+        android:textSize="16dp"
+        android:layout_marginTop="9.2dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/teks88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gambar18"
+        android:text="Alamat"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="33sp"
+        android:layout_marginTop="30sp"
+        />
+
+    <TextView
+        android:id="@+id/teks89"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jalan Pajajaran No. 80, Bogor,Jawa Barat, \nIndonesia"
+        android:layout_below="@id/teks88"
+        android:textSize="16dp"
+        android:layout_marginStart="33sp"
+        android:textColor="#828282"
+        android:layout_marginTop="10dp"
+        android:lineHeight="28dp"
+        />
+
+    <TextView
+        android:id="@+id/teks90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks89"
+        android:text="Tentang"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="33sp"
+        android:layout_marginTop="30sp"
+        />
+
+    <TextView
+        android:id="@+id/teks91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RS PMI Bogor merupakan poliklinik eksklusif \nyang melayani dokter umum, gigi, spesialis, \ndan lainnya."
+        android:layout_below="@id/teks90"
+        android:textSize="16dp"
+        android:layout_marginStart="33sp"
+        android:textColor="#828282"
+        android:layout_marginTop="10dp"
+        android:lineHeight="28dp"
+        />
+
+    <TextView
+        android:id="@+id/teks92"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks91"
+        android:text="Jam buka"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="33sp"
+        android:layout_marginTop="30sp"
+        />
+
+    <TextView
+        android:id="@+id/teks93"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senin - Jumat : 08.00 - 23.00 \nSabtu - Minggu : 01.00 - 23.59"
+        android:layout_below="@id/teks92"
+        android:textSize="16dp"
+        android:layout_marginStart="33sp"
+        android:textColor="#828282"
+        android:layout_marginTop="10dp"
+        android:lineHeight="28dp"
+        />
+
+    <ImageView
+        android:id="@+id/gambar20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image88"
+        android:layout_below="@id/teks93"
+        android:layout_marginTop="30sp"
+        />
+
+    <Button
+        android:id="@+id/btnAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/gambar20"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Buat janji temu"
+        android:textSize="20sp"
+        android:backgroundTint="@color/greenSehatQ"
+        />
+
+</RelativeLayout>

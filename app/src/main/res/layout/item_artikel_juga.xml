@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="307dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#F1F1F1"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="10sp"
+    android:layout_height="120dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTopicJuga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mental"
+            android:textColor="@color/white"
+            android:background="@color/greenSehatQ"
+            android:padding="7dp"
+            android:layout_marginTop="12sp"
+            android:layout_marginStart="10dp"
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:id="@+id/tvJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTopicJuga"
+            android:text="Tanda - tanda kesehatan \nmental tidak sehat"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:lineHeight="25dp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/ibArticle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image130"
+            android:layout_toRightOf="@id/tvJudul"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="20sp"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
