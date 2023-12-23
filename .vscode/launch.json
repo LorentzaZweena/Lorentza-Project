@@ -9,7 +9,7 @@
             "port": 9222,
             "request": "attach",
             "type": "msedge",
-            "webRoot": "${workspac}"
+            "webRoot": "${workspaceFolder}"
         },
         {
             "type": "chrome",
