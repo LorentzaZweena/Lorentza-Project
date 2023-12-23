@@ -2,7 +2,7 @@
 	$makanan = [
 		["Nama" => "Pizza (Original)", 
 		 "Topping" => "Pepperoni", 
-		 "Nama_Pembeli" => "Fateeh Hendharto", 
+		 "Nama_Pembeli" => "Lorentza", 
 		 "Alamat" => "Indonesia, Bogor",
 		 "Gambar" => "pizza1.jpg"],
 		

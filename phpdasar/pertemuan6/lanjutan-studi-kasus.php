@@ -1,5 +1,5 @@
 <?php 
-	// $mahasiswa = [["Ariva Zweena", "9594865", "xyz@gmail.com", "RPL"], ["Fateeh Hendharto", "83853848", "TKJ", "abc@gmail.com"]];
+	// $mahasiswa = [["Ariva Zweena", "9594865", "xyz@gmail.com", "RPL"], ["Lorentza", "83853848", "TKJ", "abc@gmail.com"]];
 	$mahasiswa = [
 		["nama" => "Ariva Zweena", 
 		 "NRP" => "9594865", 
@@ -7,7 +7,7 @@
 		 "Jurusan" => "RPL",
 		 "Gambar" => "hehe2.jpg"],
 		
-		["nama" => "Fateeh Hendharto", 
+		["nama" => "Lorentza", 
 		 "NRP" => "83853848", 
 		 "Email" => "abc@gmail.com", 
 		 "Jurusan" => "Teknik Informatika",

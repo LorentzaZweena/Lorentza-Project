@@ -3,7 +3,7 @@
 <?php 
 	$mahasiswa = [
 		["Ariva Zweena", "564676589", "RPL", "xyz@gmail.com"],
-		["Fateeh Hendharto", "83853848", "TKJ", "abc@gmail.com"],
+		["Lorentza", "83853848", "TKJ", "abc@gmail.com"],
 	];
  ?>
 
