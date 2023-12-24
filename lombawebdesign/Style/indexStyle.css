@@ -1,0 +1,312 @@
+:root{
+    --base-color: #00A9FF;
+    --p-color: #a5a5a5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+a {
+    color: black;
+}
+p {
+    color: var(--p-color);
+}
+button {
+    cursor: pointer;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    padding: 2rem 7%;
+    width: 100%;
+}
+
+.EduSpot-Logo a{
+    color: var(--base-color);
+    padding-left: 0.5em;
+}
+
+.EduSpot-Menu ul{
+    display: flex;
+}
+
+.EduSpot-Menu a{
+    color: black;
+    transition: 0.5s;
+}
+
+.EduSpot-Menu a:hover, .EduSpot-Menu a:focus,
+.Footer-Links a:hover {
+    color: var(--base-color);
+}
+
+.EduSpot-Menu li{
+    margin-top: 0.5em;
+    padding-left: 2em;
+
+}
+
+.Eduspot-Logo a{
+    color: var(--base-color);
+}
+
+.btnLogin{
+    border: 1px solid #00A9FF;
+    background-color: white;
+    padding: 0.7em 2em;
+    border-radius: 0.5em;
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btnLogin:hover{
+    background-color: var(--base-color);
+    color: white !important;
+}
+.btnSubmit {
+    width: 100%;
+    font-size: 1em;
+    background-color: var(--base-color);
+    color: white;
+    border: transparent;
+    border-radius: 0.5em;
+    padding: 12px 37px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 0em;
+}
+
+.btnSubmit:hover {
+    background-color: white;
+    border: 2px solid var(--base-color);
+    color: black !important;
+    transform: none;
+    transition: 0.5s;
+}
+
+.hero{
+    padding-top: 10em;
+}
+
+.hero h1{
+    font-size: 2.5em;
+    line-height: 1.5em;
+    margin-top: 2em;
+    margin-left: 2.7em;
+}
+
+.hero p{
+    font-size: 1em;
+    margin-left: 7em;
+    line-height: 2em;
+    margin-top: 1em;
+    color: var(--p-color);
+    width: 500px;
+}
+
+.btnLogin.oreh {
+    margin-left: 7em;
+    margin-top: 2em;
+}
+
+.Lorentza{
+    display: flex;
+}
+
+.Meow img{
+    width: 70%;
+    margin-top: 7.5em;
+    margin-left: 12em;
+}
+
+.Fateeh{
+    background-color: whitesmoke;
+    width: 100%;
+    padding-top: 8.5em;
+    padding-bottom: 6em;
+    margin-top: 3em;
+}
+
+.Fateeh h2{
+    text-align: center;
+}
+
+.Service-List {
+    display: flex;
+    margin: 4em 8%;
+}
+
+.cardView {
+    width: 40%;
+    background-color: white;
+    border-radius: 0.5em;
+    margin-right: 1em;
+}
+
+.cardView i{
+    font-size: 2em;
+    margin-left: 3.8em;
+    margin-top: 1.5em;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding: 0.5em;
+}
+
+.cardView h4{
+    text-align: center;
+    margin-top: 1em;
+}
+
+.cardView p {
+    padding: 0.8em 5%;
+    line-height: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    text-align: center;
+    color: var(--p-color);
+}
+
+.btnLogin.resize {
+    font-size: 1em;
+}
+
+#about {
+    padding-top: 8em;
+}
+#about h2 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+#about img {
+    width: 30%;
+}
+
+.AboutCard{
+    background-color: whitesmoke;
+    margin-top: 1em;
+    padding: 2em;
+    border-radius: 2%;
+    width: 600px;
+}
+.AboutCard b {
+    margin-left: 10px;
+}
+.AboutCard p{
+    margin-top: 0.5em;
+    line-height: 1.8em;
+    padding-left: 2em;
+    color: var(--p-color);
+}
+
+.Ambraise{
+    background-color: whitesmoke;
+    width: 100%;
+    padding-top: 8em;
+    margin-top: 5em;
+}
+.DanHeng h2{
+    margin-left: -1em;
+    margin-top: 4em;
+    font-size: 2em;
+}
+
+.DanHeng p {
+    margin-left: -1.7em;
+    margin-top: 1em;
+    width: 500px;
+    color: var(--p-color);
+    line-height: 2em;
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
+.DanHeng button {
+    margin-left: -1.7em;
+    cursor: pointer;
+}
+
+footer {
+    padding: 100px 100px;
+    display: flex;
+}
+
+.Footer-About {
+    width: 500px;
+}
+
+.Footer-About p{
+    line-height: 1.8em;
+    text-align: justify;
+    margin-left: 1.4em;
+}
+.Footer-About h3 {
+    margin-bottom: 0.8em;
+    margin-left: 1.2em;
+}
+
+.Footer-Links{
+    margin-left: 3em;
+    margin-top: 0.6em;
+}
+
+.Footer-Links li{
+    margin-top: 1em;
+    margin-left: 3.5em;
+}
+
+.Footer-Links a {
+    transition: 0.5s;
+}
+
+.Footer-Links h3{
+    margin-left: 3em;
+}
+
+.Footer-Contacts{
+    margin-left: 9.5em;
+    margin-top: 0.6em;
+}
+
+.Footer-Contacts li{
+    margin-top: 1em;
+    margin-right: 1em;
+    border: 1px solid #00A9FF;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.Footer-Contacts li:hover{
+    background-color: #00A9FF;
+}
+
+.Footer-Contacts i{
+    font-size: 1.5em;
+    padding: 0.3em;
+}
+
+.Footer-Contacts i:hover{
+    color: white;
+}
+
+.Footer-Contacts ul {
+    display: flex;
+}

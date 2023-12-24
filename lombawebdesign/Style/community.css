@@ -1,0 +1,159 @@
+.chat {
+    margin-left: 25em;
+    margin-right: 4em;
+    margin-top: 12em;
+    margin-bottom: 2em;
+}
+
+.chat-kolom {
+    width: 100%;
+    margin-right: 1em;
+    background-color: antiquewhite;
+    border-radius: 10px 10px 0 0;
+    height: 800px;
+}
+
+.chat-topbar {
+    width: 100%;
+    background-color: var(--base-color);
+    padding: 1em;
+    color: white;
+    border-radius: 10px;
+}
+
+.chat-profile {
+    margin-left: 2em;
+}
+
+.chat-profile img {
+    width: 70px; height: 70px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 1.2em;
+    object-fit: contain;
+    background-color: white;
+}
+
+.chat-call {
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.chat aside {
+    width: 40%;
+    padding: 1em;
+}
+
+.chat aside h2 {
+    margin-bottom: 1em;
+}
+
+.chat aside h2 {
+    font-size: 1.4em;
+}
+
+.chat aside .chat-profile {
+    margin: 0;
+    margin-bottom: 1.3em;
+    cursor: pointer;
+}
+
+.chat aside .chat-profile img {
+    border: 2px solid #d9d9d9;
+    width: 60px; height: 60px;
+    margin-right: 1.4em;
+    object-fit: cover;
+}
+
+.chat-isi {
+    margin: 1em;
+}
+
+.back {
+    font-size: 1.5em;
+    border: 2px solid white;
+}
+.message-sent, .message-receive {
+    position: relative;
+    padding: 0.8em;
+}
+
+.message-sent i, .message-receive i {
+    font-size: 1.4em;
+    margin-left: 10em;
+}
+
+.message-sent span, .message-receive span {
+    display: flex;
+    color: #aaaaaa;
+}
+
+.message-sent {
+    background-color: white;
+    width: 60%;
+    border-radius: 12px 12px 0 12px;
+    left: 23em;
+}
+
+.message-sent span {
+    justify-content: end;
+    margin-right: 1.5em;
+}
+
+.message-receive {
+    margin: 2em 0;
+    width: 60%;
+    background-color:aliceblue;
+    border-radius: 12px 12px 12px 0;
+}
+
+.message-receive2 {
+    margin: 2em 0;
+    width: 60%;
+    background-color:aliceblue;
+    border-radius: 12px 12px 12px 0;
+}
+
+.chat-kolom .input-box {
+    margin: 1em 0em;
+}
+
+.input-box .input-field {
+    position: relative;
+    width: 180%; height: 3.2em;
+    margin: 1em;
+    margin-top: 5em;
+}
+
+.input-box .input-field input {
+    padding-right: 7.5em;
+}
+
+.input-box .input-field i {
+    right: 1em;
+    left: auto;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.input-box .input-field .mic-circle {
+    background-color: var(--base-color);
+    border-radius: 50%;
+    padding: 0.4em;
+    cursor: pointer;
+    color: white;
+    margin-right: auto;
+}
+
+.chat-kolom p {
+    color: black;
+}
+
+section{
+    margin-top: -10em;
+}
+
+.message-receive img{
+    width: 10%;
+    height: 2em;
+}

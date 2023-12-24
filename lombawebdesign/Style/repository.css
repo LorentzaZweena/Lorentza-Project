@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.repository-nya img{
+    width: 60%;
+    height: 23em;
+    margin-left: 28em;
+    margin-top: 5em;
+    border-radius: 3%;
+}
+
+.buat-flex-lagi-beneran-deh-fix-real-bener-terakhir-kayaknya{
+    display: flex;
+}
+
+.deskripsi-nya{
+    margin-left: 20em;
+    margin-top: 5.4em;
+}
+
+.deskripsi-nya li{
+    margin-top: 2em;
+    font-size: 0.9em;
+}
+
+.deskripsi-nya p{
+    margin-top: 2em;
+    text-align: justify;
+    width: 65%;
+    height: 3em;
+}
+
+.rgrfg{
+    margin-top: 7em;
+}
+
+.rgrfg a{
+    border: 1px solid #00A9FF;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 5%;
+}
+
+.rgrfg a:hover{
+    background-color: #00A9FF;
+    color: white;
+    transition: 0.5s;
+}
+
+.yg-kiri{
+    margin-left: 28em;
+}
+
+.yg-kiri h3{
+    margin-top: 2em;
+}
+
+.yg-kiri p{
+    width: 80%;
+    height: 3em;
+    text-align: justify;
+    margin-top: 1em;
+}
+
+.buat-flex-lagi-beneran-deh-fix-real-bener-terakhir-kayaknya-sih-haha{
+    display: flex;
+    margin-top: 6em;
+}
+
+.fxbdgh a{
+    margin-left: 1em;
+    background-color: whitesmoke;
+    padding: 0.5em;
+    color: #5b5963;
+}
+
+.buat-flex-lagi-beneran-deh-fix-real-bener-terakhir-kayaknya-sih{
+    display: flex;
+}
+
+.editor{
+    margin-right: 30em;
+    margin-top: 2.4em;
+    width: 30%;
+}
+
+.editor span{
+    padding-top: 1em;
+}
+
+.editor2{
+    margin-top: 2em;
+}
+
+.buat-flex-lagi-beneran-deh-fix-real-bener-terakhir-kayaknya-sih-haha-tapi{
+    display: flex;
+}
+
+.fxcgxbcg{
+    margin-left: 0.5em;
+}
