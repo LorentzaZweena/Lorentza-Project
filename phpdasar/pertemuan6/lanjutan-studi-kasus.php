@@ -1,5 +1,4 @@
 <?php 
-	// $mahasiswa = [["Ariva Zweena", "9594865", "xyz@gmail.com", "RPL"], ["Lorentza", "83853848", "TKJ", "abc@gmail.com"]];
 	$mahasiswa = [
 		["nama" => "Ariva Zweena", 
 		 "NRP" => "9594865", 
