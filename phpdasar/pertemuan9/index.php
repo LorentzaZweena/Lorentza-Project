@@ -47,7 +47,7 @@
 <body>
 	<h1>Daftar mahasiswa</h1>
 	<table border="1" cellpadding="10" cellspacing="0">
-		<tr>
+	<tr>
 			<th>No.</th>
 			<th>Aksi</th>
 			<th>Gambar</th>
@@ -56,18 +56,22 @@
 			<th>Email</th>
 			<th>Jurusan</th>
 		</tr>
+		<?php $i = 1; ?>
+		<?php while ($row = mysqli_fetch_assoc($result) ) : ?>
 		<tr>
-			<td>1</td>
+			<td><?= $i; ?></td>
 			<td>
 				<a href="">Ubah</a> |
 				<a href="">Hapus</a>
 			</td>
-			<td><img src="img/photo1.jpeg"></td>
-			<td>549579896</td>
-			<td>Ariva Zweena</td>
-			<td>abc@gmail.com</td>
-			<td>RPL</td>
+			<td><img src="img/<?= $row["gambar"]; ?>"></td>
+			<td><?= $row["nrp"]; ?></td>
+			<td><?= $row["nama"]; ?></td>
+			<td><?= $row["email"]; ?></td>
+			<td><?= $row["jurusan"]; ?></td>
 		</tr>
+		<?php $i++; ?>
+	<?php endwhile; ?>
 	</table>
 </body>
 </html>
