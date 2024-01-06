@@ -22,6 +22,7 @@
 		<input type="hidden" name="id" value="<?=$mhs["id"]; ?>">
 		<ul>
 			<li>
+				<!-- there's errors in input -->
 				<label for="nrp">NRP : </label>
 				<input type="text" name="nrp" id="nrp" required value="<?= $mhs["nrp"]; ?>">
 			</li>
