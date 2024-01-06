@@ -6,7 +6,14 @@
 
 	//query data mahasiswa berdasarkan id
 	$mhs = query("SELECT * FROM mahasiswa WHERE id = $id");
-
+	//there's an unfinished error here
+	if (isset($_POST["submit"])) {
+		if (ubah($_POST) > 0) {
+			echo "<script>alert('data berhasil ditambahkan'); document.location.href = 'index.php'; </script>";
+		} else {
+			echo "<script>alert('data gagal ditambahkan'); document.location.href = 'index.php'; </script>";
+		}
+	}
  ?>
 
 <!DOCTYPE html>
@@ -22,7 +29,6 @@
 		<input type="hidden" name="id" value="<?=$mhs["id"]; ?>">
 		<ul>
 			<li>
-				<!-- there's errors in input -->
 				<label for="nrp">NRP : </label>
 				<input type="text" name="nrp" id="nrp" required value="<?= $mhs["nrp"]; ?>">
 			</li>
