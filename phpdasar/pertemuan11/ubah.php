@@ -1,8 +1,12 @@
 <?php
 	require 'functions.php';
 	
+	//ambil data di url
 	$id = $_GET["id"];
-	// var_dump($id); --> Untuk melihat id mahasiswa
+
+	//query data mahasiswa berdasarkan id
+	$mhs = query("SELECT * FROM mahasiswa WHERE id = $id");
+	var_dump($mhs);
  ?>
 
 <!DOCTYPE html>
