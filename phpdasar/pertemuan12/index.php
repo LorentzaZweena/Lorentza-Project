@@ -1,7 +1,8 @@
 <?php 
 	require 'functions.php';
 	// $mahasiswa = query("SELECT * FROM mahasiswa ORDER BY id DESC"); kalo mau dari yg terlama dulu
-	// $mahasiswa = query("SELECT * FROM mahasiswa ORDER BY id ASC"); kalo mau dai yg terbaru dulu
+	// $mahasiswa = query("SELECT * FROM mahasiswa ORDER BY id ASC"); kalo mau dari yg terbaru dulu
+	// $mahasiswa = query("SELECT * FROM mahasiswa WHERE nrp = '564534676'"); kalo mau data yg tertentu aja
 	$mahasiswa = query("SELECT * FROM mahasiswa");
  ?>
 
