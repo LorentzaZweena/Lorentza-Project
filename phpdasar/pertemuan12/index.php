@@ -1,9 +1,10 @@
 <?php 
 	require 'functions.php';
-	// $mahasiswa = query("SELECT * FROM mahasiswa ORDER BY id DESC"); kalo mau dari yg terlama dulu
-	// $mahasiswa = query("SELECT * FROM mahasiswa ORDER BY id ASC"); kalo mau dari yg terbaru dulu
-	// $mahasiswa = query("SELECT * FROM mahasiswa WHERE nrp = '564534676'"); kalo mau data yg tertentu aja
 	$mahasiswa = query("SELECT * FROM mahasiswa");
+
+	if (isset($_POST["cari"])) {
+		$mahasiswa = cari($_POST["keyword"]);
+	}
  ?>
 
 <!DOCTYPE html>
@@ -23,6 +24,12 @@
 	<h1>Daftar mahasiswa</h1>
 	<a href="tambah.php">Tambah data mahasiswa</a>
 	<br><br>
+
+	<form action="" method="post">
+		<input type="text" name="keyword" size="30" autofocus placeholder="masukkan keyword pencarian" autocomplete="off">
+		<button type="submit" name="cari">Cari</button>
+	</form>
+	<br>
 	<table border="1" cellpadding="10" cellspacing="0">
 		<tr>
 			<th>No.</th>

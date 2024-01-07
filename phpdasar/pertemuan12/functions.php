@@ -45,4 +45,9 @@
 		mysqli_query($conn, $query);
 		return mysqli_affected_rows($conn);
 	}
+
+	function cari($keyword){
+		$query = "SELECT * FROM mahasiswa WHERE nama LIKE '%$keyword%' OR nrp LIKE '%$keyword%' OR email LIKE '%$keyword%' OR jurusan LIKE '%$keyword%'";
+		return query($query);
+	}
  ?>
