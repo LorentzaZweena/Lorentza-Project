@@ -1,0 +1,249 @@
+.pjqm {
+    margin-left: 23em;
+}
+
+.search-box input{
+    background-color: whitesmoke;
+    border: none;
+    padding: 1em;
+    width: 100%;
+    border-radius: 8px 0 0 8px;
+}
+
+.search-box i {
+    padding: 1em;
+    color: white;
+    background-color: var(--base-color);
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-box .input-field {
+    position: relative;
+    width: 48%; height: 3em;
+    margin: 1em 0;
+}
+
+.input-box .input-field input {
+    width: 100%; height: 100%;
+    background: transparent;
+    border: 2.5px solid var(--base-color);
+    outline: none;
+    font-size: 1em;
+    border-radius: 6px;
+    padding: 1em; 
+}
+
+.input-box .input-field input::placeholder {
+    color: var(--p-color);
+}
+
+.input-box .input-field i {
+    position: absolute;
+    left: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4em;
+    color: var(--base-color);
+}
+
+.isi-about{
+    margin-left: 15em;
+}
+
+.container-about{
+    width: 70%;
+    height: 40em;
+    background-color: white;
+    margin-left: 24em;
+    margin-top: 2em;
+    /* :3 */
+}
+.nxjs h3{
+    margin-left: 2em;
+    margin-top: 1.4em;
+}
+
+.kotak-biru-about{
+    width: 100%;
+    height: 15em;
+    background-color: #00A9FF;
+    margin-left: 2.3em;
+    margin-top: 1em;
+    border-radius: 1%;
+}
+
+.kotak-biru-about h2{
+    color: white;
+    margin-left: 2em;
+    padding-top: 1em;
+    font-size: 2em;
+}
+
+.isi1 p{
+    color: white;
+    margin-left: 4em;
+    margin-top: 0.5em;
+    line-height: 1.9em;
+}
+
+.gambar-about img{
+    width: 65%;
+    margin-left: 10em;
+    margin-top: -1.5em;
+}
+
+.buat-flex-lagi-beneran-deh{
+    display: flex;
+}
+
+.kotak-about{
+    width: 35%;
+    height: 15em;
+    background-color: whitesmoke;
+    margin-left: 2.26em;
+    margin-top: 2.5em;
+    border-radius: 2%;
+}
+
+.kotak-about2{
+    width: 35%;
+    height: 15em;
+    background-color: whitesmoke;
+    margin-left: 1em;
+    margin-top: 2.5em;
+    border-radius: 2%;
+}
+
+.kotak-about3{
+    width: 35%;
+    height: 15em;
+    background-color: whitesmoke;
+    margin-left: 2em;
+    margin-top: 1em;
+    border-radius: 2%;
+}
+
+.kotak-about4{
+    width: 35%;
+    height: 15em;
+    background-color: whitesmoke;
+    margin-left: 1em;
+    margin-top: 1em;
+    border-radius: 2%;
+}
+
+.kotak-about i{
+    color: #00A9FF;
+    font-size: 2em;
+    margin-left: 1em;
+    margin-top: 0.8em;
+}
+
+.kotak-about2 i{
+    color: #00A9FF;
+    font-size: 2em;
+    margin-left: 1em;
+    margin-top: 0.8em;
+}
+
+.kotak-about3 i{
+    color: #00A9FF;
+    font-size: 2em;
+    margin-left: 1em;
+    margin-top: 0.8em;
+}
+
+.kotak-about4 i{
+    color: #00A9FF;
+    font-size: 2em;
+    margin-left: 1em;
+    margin-top: 0.8em;
+}
+
+.judul-about p{
+    color: black;
+    margin-left: 2em;
+    margin-top: 0.5em;
+}
+
+.desk p{
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+.buat-flex-lagi-beneran-deh-fix{
+    display: flex;
+    margin-top: 1em;
+}
+
+.stats img{
+    width: 80%;
+    margin-left: 2em;
+}
+
+.kotak-abu{
+    width: 133%;
+    height: 7em;
+    background-color: whitesmoke;
+    margin-top: 1.4em;
+    border-radius: 7%;
+}
+
+.buat-flex-lagi-beneran-deh-fix-real{
+    display: flex;
+}
+
+.biugwd h3{
+    margin-top: 1.4em;
+}
+
+.gambar-best img{
+    width: 59%;
+    height: 5.5em;
+    border-radius: 100%;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+.buat-flex-lagi-beneran-deh-fix-real-bener{
+    display: flex;
+    background-color: whitesmoke;
+    margin-top: 1em;
+}
+
+.nama-dokter p{
+    margin-top: 1.4em;
+    color: black;
+}
+
+.star i{
+    margin-top: 1em;
+}
+
+.buat-flex-lagi-beneran-deh-fix-real-bener-terakhir{
+    display: flex;
+}
+
+.rating-dokter li{
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+
+.jefjke{
+    margin-top: -3em;
+    margin-left: 3.3em;
+    color: #A5A5A5;
+    font-size: 0.9em;
+}
+
+.rnfrhf h3{
+    margin-top: 2em;
+    margin-left: 2em;
+}

@@ -1,0 +1,259 @@
+.jnhuf-alt{
+    width: 35.5%;
+    border: 2px solid #00A9FF;
+    margin-top: 1em;
+    border-radius: 10px;
+    margin-left: 4em;
+}
+
+.jniur-alt h2{
+    color: black;
+    padding-left: 1.4em;
+    font-size: 1.4em;
+}
+
+.jniur-alt p{
+    color: black;
+    margin-left: 1.8em;
+    margin-top: 0.5em;
+}
+
+.btnSubmit {
+    margin: 1.5em 1em;
+}
+
+.jniur-alt{
+    margin-top: 1.5em;
+    margin-left: 0em;
+}
+
+.bhjgvrv {
+    margin-left: 21.5em;
+}
+
+.hjgn img {
+    width: 70%;
+}
+
+.mjf h1{
+    font-size: 2.25em;
+}
+
+.mjf p{
+    font-size: 1.25em;
+    margin-top: 1em;
+    line-height: 1.8em;
+}
+
+.jbhgef{
+    padding-top: 2em;
+    margin-left: 25em;
+}
+
+.jhvhfh {
+    margin-top: 3em;
+    margin-right: 10em;
+}
+
+.noyefv{
+    width: 25%;
+    margin-left: 4em;
+    background-color: whitesmoke;
+    height: 23.4em;
+    margin-top: 1.5em;
+    border-radius: 4%;
+}
+
+.noyefv2{
+    width: 25%;
+    margin-left: 2em;
+    background-color: whitesmoke;
+    height: 23.4em;
+    margin-top: 1.5em;
+    border-radius: 4%;
+}
+
+.noyefv2 h4{
+    margin-left: 1.8em;
+}
+
+.noyefv2 p{
+    margin-left: 1.7em;
+    font-size: 1em;
+    margin-top: 1em;
+    line-height: 1.8em;
+}
+
+.noyefv2 a{
+    margin-left: 1.7em;
+    border: 1px solid #00A9FF;
+    padding: 0.8em;
+    border-radius: 7%;
+}
+
+.noyefv2 a:hover{
+    background-color: #00A9FF;
+    color: white;
+    transition: 0.5s;
+}
+
+.noyefv h4{
+    margin-left: 1.8em;
+}
+
+.noyefv p{
+    margin-left: 1.7em;
+    font-size: 1em;
+    margin-top: 1em;
+    line-height: 1.8em;
+}
+
+.noyefv a{
+    margin-left: 1.7em;
+    border: 1px solid #00A9FF;
+    padding: 0.8em;
+    border-radius: 7%;
+}
+
+.noyefv a:hover{
+    background-color: #00A9FF;
+    color: white;
+    transition: 0.5s;
+}
+
+.hguygrf h3{
+    margin-left: 22em;
+    margin-top: 2em;
+}
+
+.isi-repository{
+    width: 60em;
+    height: 10em;
+    /* margin-left: 0em; */
+    margin-top: 2em;
+    border-radius: 3%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.judul h2{
+    margin-left: 17em;
+    margin-top: 2em;
+}
+
+.isi-repository img{
+    width: 100%;
+    height: 15em;
+    border-radius: 5%;
+}
+
+.gambar-repository{
+    margin-right: 1.78em;
+}
+
+.gambar-repository h4{
+    margin-top: 0.5em;
+}
+
+.gambar-repository p{
+    margin-top: 0.5em;
+}
+
+.container{
+    width: 62%;
+    height: 410px;
+    background-color: white;
+    margin-left: 25em;
+    margin-top: 1em;
+}
+
+.container h2{
+    margin-left: 0.3em;
+    margin-top: 1em;
+}
+
+.noyefv img{
+    width: 80%;
+    height: 11.3em;
+    margin-top: 1em;
+}
+
+.noyefv2 img{
+    width: 80%;
+    height: 11.3em;
+    margin-top: 1em;
+}
+
+.videos h2{
+    margin-left: 16.7em;
+    margin-top: 2em;
+}
+
+.isi-video{
+    background-color: whitesmoke;
+    width: 50%;
+    height: 12em;
+    border-radius: 3%;
+}
+
+.isi-video2{
+    background-color: whitesmoke;
+    width: 50%;
+    height: 12em;
+    border-radius: 3%;
+    margin-left: 2em;
+}
+
+.gambar-video img{
+    width: 8em;
+    height: 10em;
+    margin-left: 2em;
+    margin-top: 1em;
+    border-radius: 3%;
+}
+
+.buat-flex{
+    display: flex;
+}
+
+.judul-video h4{
+    margin-left: 1.8em;
+    margin-top: 1.2em;
+    line-height: 2em;
+}
+
+.judul-video p{
+    margin-left: 1.7em;
+    margin-top: 0.5em;
+}
+
+.icon-video i{
+    font-size: 1.5em;
+    margin-top: 0.8em;
+    margin-left: 1em;
+}
+
+.buat-flex-lagi{
+    display: flex;
+}
+
+.play-video{
+    margin-top: 1.2em;
+    margin-left: 0.56em;
+}
+
+.play-video a:hover{
+    text-decoration: underline;
+    color: #00A9FF;
+    /* transition: 0.5s; */
+}
+
+.videos1{
+    display: flex;
+    margin-top: 1em;
+}
+
+.videos2{
+    display: flex;
+    margin-top: 1.3em;
+}
