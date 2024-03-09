@@ -49,9 +49,16 @@ class signupActivity : AppCompatActivity() {
 
                 val alertDialog: AlertDialog = builder.create()
                 alertDialog.show()
-            }else{
+            }else if (inputPassword?.getText().toString().equals("") && inputEmail?.getText().toString().equals("")) {
                 builder.setTitle("Uh oh!")
                 builder.setMessage("Please fill the blank first!")
+                builder.setCancelable(true)
+
+                val alertDialog: AlertDialog = builder.create()
+                alertDialog.show()
+            }else{
+                builder.setTitle("Try again!")
+                builder.setMessage("Incorrect email or password!")
                 builder.setCancelable(true)
 
                 val alertDialog: AlertDialog = builder.create()

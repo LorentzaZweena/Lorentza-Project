@@ -1,1 +1,0 @@
-Kedua file tersebut sama seperti yang form, bedanya adalah di kotlin nya
