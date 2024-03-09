@@ -1,7 +1,9 @@
 package com.example.lorentza.suround
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageButton
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lorentza.R
@@ -39,10 +41,16 @@ class HomeActivity : AppCompatActivity() {
             Recently("Mistake", R.drawable.image24),
             Recently("Ending", R.drawable.image25),
         )
-       val adapterr = RecentlyAdapter(recently)
+        val adapterr = RecentlyAdapter(recently)
         val linearVertical = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
         rvRecently.adapter = adapterr
         rvRecently.layoutManager = linearVertical
+
+        val ibFavorite : ImageButton = findViewById(R.id.ibFavorite)
+        ibFavorite.setOnClickListener {
+            val intent = Intent(this, FavoriteActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
