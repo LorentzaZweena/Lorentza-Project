@@ -4,6 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#F4F4F4"
     tools:context=".suround.TrendingActivity">
+
+    <ImageButton
+        android:id="@+id/ibBackTrending"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:background="@drawable/ic_back"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="30sp"
+        />
+
+    <TextView
+        android:id="@+id/teks111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Playing"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="27sp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@id/teks111"
+        android:layout_marginTop="20sp"
+        app:cardCornerRadius="30sp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/teks112"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listening to"
+                android:layout_centerHorizontal="true"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_marginTop="30sp"
+                />
+
+            <ImageView
+                android:id="@+id/ivTrending"
+                android:layout_width="270dp"
+                android:layout_height="260dp"
+                android:src="@drawable/image14"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/teks112"
+                android:layout_marginTop="20sp"
+                />
+
+            <TextView
+                android:id="@+id/teks113"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kill bill"
+                android:layout_below="@id/ivTrending"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25sp"
+                android:layout_marginStart="45sp"
+                />
+
+            <TextView
+                android:id="@+id/teks114"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unknown"
+                android:layout_below="@id/teks113"
+                android:layout_marginStart="45sp"
+                android:textSize="16sp"
+                android:textColor="#838383"
+                android:layout_marginTop="10dp"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressSuround"
+                android:layout_width="358dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="20"
+                android:background="#FFF"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:padding="20dp"
+                android:layout_below="@id/ivTrending"
+                android:layout_marginTop="100dp"
+                android:layout_centerHorizontal="true"
+                android:progressTint="@color/blue"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

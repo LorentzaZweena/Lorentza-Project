@@ -122,6 +122,7 @@
         android:textColor="@color/blue"
         android:layout_marginStart="57sp"
         android:layout_marginTop="3dp"
+        android:textStyle="bold"
         />
     <TextView
         android:id="@+id/teks27"
