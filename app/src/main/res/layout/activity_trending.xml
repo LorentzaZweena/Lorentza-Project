@@ -97,6 +97,122 @@
                 android:layout_centerHorizontal="true"
                 android:progressTint="@color/blue"
                 />
+
+            <ImageButton
+                android:id="@+id/ibTrendingSuround"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_favorite"
+                android:layout_below="@id/ivTrending"
+                android:layout_toRightOf="@id/teks113"
+                android:layout_marginTop="27dp"
+                android:layout_marginStart="220dp"
+                />
+
+            <ImageView
+                android:id="@+id/FavoriteSuround"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lel"
+                android:layout_below="@id/ivTrending"
+                android:layout_toRightOf="@id/teks113"
+                android:layout_marginTop="27dp"
+                android:layout_marginStart="220dp"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/teks115"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressSuround"
+                android:text="1.15"
+                android:textSize="14dp"
+                android:textColor="#838383"
+                android:layout_marginStart="45sp"
+                android:layout_marginTop="-13dp"
+                />
+
+            <TextView
+                android:id="@+id/teks116"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressSuround"
+                android:text="3.02"
+                android:textSize="14dp"
+                android:textColor="#838383"
+                android:layout_marginStart="260sp"
+                android:layout_marginTop="-13dp"
+                android:layout_toRightOf="@id/teks115"
+                />
+
+            <ImageView
+                android:id="@+id/ivShuffle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teks115"
+                android:src="@drawable/baseline_shuffle_24"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="40sp"
+                />
+
+            <ImageButton
+                android:id="@+id/ibPlay"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/stroke"
+                android:backgroundTint="@color/blue"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/teks116"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/play_arrow_24"
+                />
+
+            <ImageButton
+                android:id="@+id/ibPause"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/stroke"
+                android:backgroundTint="@color/blue"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/teks116"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/baseline_pause_24"
+                android:visibility="invisible"
+                />
+
+            <ImageButton
+                android:id="@+id/ibSkip"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/teks115"
+                android:background="@drawable/baseline_skip_previous_24"
+                android:layout_toLeftOf="@id/ibPlay"
+                android:layout_marginTop="37sp"
+                android:layout_marginRight="20dp"
+                />
+
+            <ImageButton
+                android:id="@+id/ibSkip2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/teks115"
+                android:background="@drawable/baseline_skip_next_24"
+                android:layout_toRightOf="@id/ibPlay"
+                android:layout_marginTop="37sp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/ibSkip2"
+                android:layout_below="@id/teks116"
+                android:background="@drawable/baseline_playlist_add_24"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="50dp"
+                />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
