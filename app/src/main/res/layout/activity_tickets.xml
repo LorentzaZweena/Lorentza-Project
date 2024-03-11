@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".suround.TicketsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/ibBackSuround2"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:background="@drawable/ic_back"
+        android:layout_marginTop="25sp"
+        android:layout_marginStart="30sp"
+        />
+    
+    <TextView
+        android:id="@+id/teks117"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tickets"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="24sp"
+        android:textStyle="bold"
+        />
+
+    <ImageButton
+        android:id="@+id/ibFilter2"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_toRightOf="@id/teks117"
+        android:background="@drawable/ic_menu"
+        android:layout_marginTop="24sp"
+        android:layout_marginStart="85dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTickets"
+        android:layout_width="match_parent"
+        android:layout_below="@id/teks117"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="#F8F8F8"
+        app:cardCornerRadius="30sp"
+        android:layout_height="600dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvSearch2"
+            android:layout_width="300dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="55dp"
+            android:layout_height="50dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/stroke"
+                android:backgroundTint="@color/white"
+                android:hint="Search concert"
+                android:drawableStart="@drawable/ic_search"
+                android:drawableTint="#BDBDBD"
+                android:paddingStart="10sp"
+                android:drawablePadding="5dp"
+                />
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/btnTickets"
+            android:layout_width="293dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="60dp"
+            android:backgroundTint="#151727B8"
+            android:text="My tickets"
+            android:textColor="@color/blue"
+            android:textSize="16dp"
+            />
+        <ScrollView
+            android:id="@+id/svTickets"
+            android:layout_width="293dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="60dp"
+            android:layout_height="415dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTickets"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>
