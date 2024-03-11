@@ -52,5 +52,11 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, FavoriteActivity::class.java)
             startActivity(intent)
         }
+
+        val ibTicket : ImageButton = findViewById(R.id.ibTicket)
+        ibTicket.setOnClickListener {
+            val intent = Intent(this, TicketsActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
