@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lorentza.R
@@ -14,7 +15,7 @@ import com.example.lorentza.suround.model.Trending
 
 class TrendingAdapter (val data:ArrayList<Trending>):RecyclerView.Adapter<TrendingAdapter.TrendingViewHolder>(){
     class TrendingViewHolder(view: View):RecyclerView.ViewHolder(view){
-        val ibTrending:ImageButton = view.findViewById(R.id.ibTrending)
+        val ibTrending: ImageView = view.findViewById(R.id.ibTrending)
         val tvTrending:TextView = view.findViewById(R.id.tvTrending)
     }
 

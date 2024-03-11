@@ -17,6 +17,8 @@ class TrendingActivity : AppCompatActivity() {
         val ibBackTrending : ImageButton = findViewById(R.id.ibBackTrending)
         val ibTrendingSuround : ImageButton = findViewById(R.id.ibTrendingSuround)
         val FavoriteSuround : ImageView = findViewById(R.id.FavoriteSuround)
+        val ibPlay : ImageButton = findViewById(R.id.ibPlay)
+        val ibPause : ImageView = findViewById(R.id.ibPause)
 
         ibBackTrending.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
@@ -35,6 +37,14 @@ class TrendingActivity : AppCompatActivity() {
                 Toast.makeText(
                     this, "Added from favorites", Toast.LENGTH_SHORT
                 ).show()
+            }
+        }
+
+        ibPlay.setOnClickListener {
+            if (ibPause.visibility == View.VISIBLE){
+                ibPause.visibility == View.INVISIBLE
+            } else {
+                ibPause.visibility = View.VISIBLE
             }
         }
     }

@@ -46,7 +46,7 @@
                 android:layout_centerHorizontal="true"
                 android:textSize="24dp"
                 android:textStyle="bold"
-                android:layout_marginTop="30sp"
+                android:layout_marginTop="50sp"
                 />
 
             <ImageView
@@ -67,7 +67,7 @@
                 android:layout_below="@id/ivTrending"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_marginTop="25sp"
+                android:layout_marginTop="60sp"
                 android:layout_marginStart="45sp"
                 />
 
@@ -80,7 +80,7 @@
                 android:layout_marginStart="45sp"
                 android:textSize="16sp"
                 android:textColor="#838383"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 />
 
             <ProgressBar
@@ -93,7 +93,7 @@
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                 android:padding="20dp"
                 android:layout_below="@id/ivTrending"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="130dp"
                 android:layout_centerHorizontal="true"
                 android:progressTint="@color/blue"
                 />
@@ -105,7 +105,7 @@
                 android:background="@drawable/ic_favorite"
                 android:layout_below="@id/ivTrending"
                 android:layout_toRightOf="@id/teks113"
-                android:layout_marginTop="27dp"
+                android:layout_marginTop="60dp"
                 android:layout_marginStart="220dp"
                 />
 
@@ -116,7 +116,7 @@
                 android:src="@drawable/lel"
                 android:layout_below="@id/ivTrending"
                 android:layout_toRightOf="@id/teks113"
-                android:layout_marginTop="27dp"
+                android:layout_marginTop="60dp"
                 android:layout_marginStart="220dp"
                 android:visibility="invisible"
                 />
@@ -168,7 +168,7 @@
                 android:src="@drawable/play_arrow_24"
                 />
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/ibPause"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
@@ -178,6 +178,7 @@
                 android:layout_below="@id/teks116"
                 android:layout_marginTop="20sp"
                 android:src="@drawable/baseline_pause_24"
+                android:padding="12dp"
                 android:visibility="invisible"
                 />
 
