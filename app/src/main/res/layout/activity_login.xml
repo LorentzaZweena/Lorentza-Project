@@ -103,7 +103,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/teks8"
         android:text="Terms of services"
-        android:layout_marginStart="70dp"
+        android:layout_marginStart="87dp"
         android:textSize="13dp"
         android:textColor="#1727B8"
         android:layout_marginTop="4dp"

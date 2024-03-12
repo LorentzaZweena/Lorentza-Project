@@ -13,6 +13,7 @@ class FavoriteActivity : AppCompatActivity() {
 
         val ibBackSuround : ImageButton = findViewById(R.id.ibBackSuround)
         val ibHome : ImageButton = findViewById(R.id.ibHome)
+        val ibTicket : ImageButton = findViewById(R.id.ibTicket)
 
         ibBackSuround.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
@@ -22,6 +23,11 @@ class FavoriteActivity : AppCompatActivity() {
         ibHome.setOnClickListener {
             val intent2 = Intent(this, HomeActivity::class.java)
             startActivity(intent2)
+        }
+
+        ibTicket.setOnClickListener {
+            val intent = Intent(this, TicketsActivity::class.java)
+            startActivity(intent)
         }
     }
 }
