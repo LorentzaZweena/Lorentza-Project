@@ -3,6 +3,7 @@ package com.example.lorentza.suround
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -20,6 +21,7 @@ class TicketsActivity : AppCompatActivity() {
         val ibFavorite : ImageButton = findViewById(R.id.ibFavorite)
         val ibBackSuround2 : ImageButton = findViewById(R.id.ibBackSuround2)
         val ibProfile : ImageButton = findViewById(R.id.ibProfile)
+        val btnTickets : Button = findViewById(R.id.btnTickets)
 
         val tickets = arrayListOf<Tickets>(
             Tickets(R.drawable.image138, "Sep 22 - 06.00 PM", "Chêne - \nTranquillité", R.drawable.ic_favorite_whitesmoke),
@@ -55,6 +57,11 @@ class TicketsActivity : AppCompatActivity() {
         ibProfile.setOnClickListener {
             val intent = Intent(this, SuroundProfileActivity::class.java)
             startActivity(intent)
+        }
+
+        btnTickets.setOnClickListener {
+            val intent0 = Intent(this, MyticketsActivity::class.java)
+            startActivity(intent0)
         }
     }
 }
