@@ -27,7 +27,9 @@ class TicketsActivity : AppCompatActivity() {
             Tickets(R.drawable.image140, "Sep 19 - 11.00 PM", "Conséquences - \nMalicieuSe", R.drawable.ic_favorite_whitesmoke),
             Tickets(R.drawable.image141, "Mar 7 - 10.00 AM", "Xaeplippeion - \nMatriarcat", R.drawable.ic_favorite_whitesmoke),
             Tickets(R.drawable.image142, "May 29 - 07.00 PM", "Ovravana - \nLumière", R.drawable.ic_favorite_whitesmoke),
-            Tickets(R.drawable.image143, "Jan 4 - 11.38 AM", "Brouillon - \nImpuissance", R.drawable.ic_favorite_whitesmoke)
+            Tickets(R.drawable.image143, "Jan 4 - 11.38 AM", "Cachette - \nCoulés", R.drawable.ic_favorite_whitesmoke),
+            Tickets(R.drawable.image144, "Apr 29- 03.42 PM", "Malédiction - \nRetraite", R.drawable.ic_favorite_whitesmoke),
+            Tickets(R.drawable.image145, "Feb 19- 05.10 AM", "Pourparlers - \nD'Ahoy", R.drawable.ic_favorite_whitesmoke)
         )
         val adapterr = TicketsAdapter(tickets)
         val linearVertical = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
