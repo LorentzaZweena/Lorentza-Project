@@ -5,10 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".suround.MyticketsActivity">
+    tools:context=".suround.DetailActivity">
 
     <ImageButton
-        android:id="@+id/ibBack"
+        android:id="@+id/ibBack2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_back"
@@ -17,7 +17,7 @@
         />
 
     <TextView
-        android:id="@+id/teks130"
+        android:id="@+id/teks134"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="My tickets"
@@ -28,118 +28,138 @@
         />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cvTickets2"
-        android:layout_width="310dp"
-        android:layout_below="@id/teks130"
+        android:layout_width="316dp"
+        android:id="@+id/detailTicket"
+        android:layout_below="@id/teks134"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
         app:cardCornerRadius="10dp"
-        android:backgroundTint="#E9E9E9"
-        android:layout_height="45dp">
+        android:layout_marginTop="50dp"
+        android:layout_height="408dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/btnRecently"
-                android:layout_width="138dp"
-                android:layout_height="wrap_content"
-                android:text="Recently"
-                android:layout_marginStart="10dp"
-                android:textSize="16dp"
-                android:textColor="@color/blue"
-                android:backgroundTint="@color/white"
+            
+            <ImageView
+                android:id="@+id/gambar49"
+                android:layout_width="286dp"
+                android:layout_height="158dp"
+                android:src="@drawable/image138"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
                 />
 
-            <Button
-                android:id="@+id/btnPastTickets"
+            <TextView
+                android:id="@+id/teks135"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/btnRecently"
-                android:backgroundTint="#E9E9E9"
+                android:layout_below="@id/gambar49"
+                android:text="Name"
+                android:textSize="14dp"
+                android:layout_marginTop="13sp"
                 android:layout_marginStart="15sp"
-                android:text="Past tickets"
-                android:textSize="16dp"
-                android:textColor="#A0A0A0"
-                />
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="295dp"
-        android:id="@+id/item"
-        android:layout_below="@id/cvTickets2"
-        android:layout_marginTop="20dp"
-        app:cardCornerRadius="10dp"
-        android:layout_centerHorizontal="true"
-        android:layout_height="100dp">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:backgroundTint="@color/white"
-                app:strokeColor="@color/black"
-                android:layout_height="match_parent">
-                
-            </com.google.android.material.card.MaterialCardView>
-
-            <TextView
-                android:id="@+id/teks131"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:text="Chêne - Tranquillité"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="13dp"
-                android:textStyle="bold"
-                />
-
-            <TextView
-                android:id="@+id/teks132"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="13dp"
-                android:layout_below="@+id/teks131"
-                android:text="Sep 22 - 06.00 PM"
-                android:layout_marginStart="16sp"
-                android:layout_marginTop="5dp"
                 android:textColor="#B8B8B8"
                 android:textStyle="bold"
                 />
 
             <TextView
-                android:id="@+id/teks133"
+                android:id="@+id/teks136"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/teks132"
-                android:text="VIP - 1"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="5dp"
+                android:layout_below="@id/teks135"
+                android:text="Chêne - Tranquillité"
+                android:textSize="15dp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="15sp"
+                android:textStyle="bold"
                 />
 
-            <Button
-                android:id="@+id/garis4"
-                android:layout_width="1dp"
-                android:layout_height="74dp"
-                android:layout_toRightOf="@id/teks131"
-                android:backgroundTint="#B8B8B8"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="30dp"
+            <TextView
+                android:id="@+id/teks137"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teks136"
+                android:text="Date"
+                android:textSize="14dp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="15sp"
+                android:textColor="#B8B8B8"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/teks138"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teks137"
+                android:text="Friday, 22 Sep 2098"
+                android:textSize="15dp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="15sp"
+                android:textStyle="bold"
                 />
 
             <ImageView
-                android:id="@+id/gambar48"
+                android:id="@+id/gambar50"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/gambar49"
+                android:layout_toRightOf="@id/teks136"
+                android:src="@drawable/image149"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="90dp"
+                />
+
+            <TextView
+                android:id="@+id/teks139"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/garis4"
-                android:background="@drawable/image149"
-                android:layout_marginStart="20dp"
+                android:layout_below="@id/gambar50"
+                android:text="Time"
+                android:textSize="14dp"
+                android:layout_toRightOf="@id/teks137"
+                android:layout_marginStart="160sp"
+                android:textColor="#B8B8B8"
+                android:layout_marginTop="7.5dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/teks140"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teks139"
+                android:text="06.00 PM"
+                android:textSize="15dp"
+                android:layout_marginTop="10sp"
+                android:layout_toRightOf="@id/teks138"
+                android:layout_marginStart="55sp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/garis5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/teks140"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#E4E4E4"
+                />
+            
+            <Button
+                android:id="@+id/btnDownload"
+                android:layout_width="268dp"
+                android:layout_height="52dp"
+                android:layout_below="@id/garis5"
                 android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#EDEEF5"
+                android:text="Download as image"
+                android:textColor="@color/blue"
                 />
         </RelativeLayout>
+
     </androidx.cardview.widget.CardView>
     <ImageButton
         android:id="@+id/ibHome"
