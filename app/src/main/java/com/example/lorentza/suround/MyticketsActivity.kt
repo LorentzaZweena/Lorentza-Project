@@ -2,6 +2,7 @@ package com.example.lorentza.suround
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
@@ -20,10 +21,16 @@ class MyticketsActivity : AppCompatActivity() {
             insets
         }
         val item = findViewById<CardView>(R.id.item)
+        val ibBack = findViewById<ImageButton>(R.id.ibBack)
 
         item.setOnClickListener {
             val intent = Intent(this, DetailActivity::class.java)
             startActivity(intent)
+        }
+
+        ibBack.setOnClickListener {
+            val intent2 = Intent(this, TicketsActivity::class.java)
+            startActivity(intent2)
         }
     }
 }

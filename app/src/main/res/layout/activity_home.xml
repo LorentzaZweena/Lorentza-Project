@@ -150,7 +150,7 @@
             android:layout_width="match_parent"
             android:layout_below="@id/teks21"
             android:layout_marginTop="10dp"
-            android:layout_height="175dp">
+            android:layout_height="195dp">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
