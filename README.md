@@ -18,4 +18,4 @@ I put my imagination into a code, coding is the art of weaving logic into the fa
 🚀 **What are you waiting for?**
 In the labyrinth of ones and zeros, my code is the explorer, mapping out a journey through algorithms and logic, uncovering the hidden treasures of a digital adventure
 
-⚛️ **Follow me on this GitHub, now!** ⚡️
+⚛️ **Follow me on this GitHub to know more about my projects** ⚡️
