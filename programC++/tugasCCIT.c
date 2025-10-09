@@ -5,14 +5,20 @@ int main() {
     int kembali;
 
     do {
-        printf("****MENU****\n");
+        printf("MENU\n");
         printf("1. Penjumlahan\n");
         printf("2. Pengurangan\n");
         printf("3. Perkalian\n");
         printf("4. Pembagian\n");
         printf("5. Exit\n");
         printf("Silakan input pilihan anda : ");
-        scanf("%d", &pilihan);
+        
+        if (scanf("%d", &pilihan) != 1) {
+            while (getchar() != '\n');
+            printf("Input tidak valid. Silakan masukkan angka yang valid.\n");
+            continue;
+        }
+
         switch(pilihan) {
             case 1:
                 printf("Anda memilih menu Penjumlahan\n");
@@ -46,4 +52,3 @@ int main() {
 
     return 0;
 }
-
