@@ -44,7 +44,7 @@ void addReservation() {
     printf("Customer name: ");
     scanf(" %[^\n]", r.name);
 
-    printf("Room type : ");
+    printf("Room type (Single/Double/VIP) : ");
     scanf(" %19s", r.roomType);
 
     float price = getPriceFromType(r.roomType);
@@ -105,7 +105,7 @@ void searchReservationByName() {
 
 void searchRoomType() {
     char search[20];
-    printf("\nEnter room type to search (e.g. vip): ");
+    printf("\nEnter room type to search (Single/Double/VIP): ");
     scanf(" %19s", search);
     int found = 0;
     for (int i = 0; i < totalRoomTypes; i++) {
@@ -141,7 +141,7 @@ void sortRoomTypes() {
             }
         }
     }
-    printf("\nRoom types sorted (A–Z):\n");
+    printf("\nRoom types sorted (Aâ€“Z):\n");
     showAllRoomTypes();
 }
 
@@ -212,7 +212,7 @@ void sortReservationsByName() {
             }
         }
     }
-    printf("\nData sorted by customer name (A–Z).\n");
+    printf("\nData sorted by customer name (Aâ€“Z).\n");
     for (int i = 0; i < totalReservations; i++) {
         printf("%d. %s\n", i + 1, data[i].name);
     }
@@ -251,8 +251,9 @@ int main() {
         printf("5. Exit\n");
         printf("Choose menu: ");
         if (scanf("%d", &menu) != 1) {
-            printf("Invalid input.\n");
-            return 0;
+            printf("Invalid input, please try again.\n");
+            while (getchar() != '\n'); // clear invalid input
+            continue;
         }
 
         switch (menu) {
@@ -265,11 +266,20 @@ int main() {
                     printf("4. Show all reservations\n");
                     printf("5. Back to main menu\n");
                     printf("Choose: ");
-                    scanf("%d", &sub);
-                    if (sub == 1) addReservation();
-                    else if (sub == 2) searchReservationByName();
-                    else if (sub == 3) sortReservationsByName();
-                    else if (sub == 4) showAllReservations();
+                    if (scanf("%d", &sub) != 1) {
+                        printf("Invalid input, please try again.\n");
+                        while (getchar() != '\n');
+                        continue;
+                    }
+                    switch (sub) {
+                        case 1: addReservation(); break;
+                        case 2: searchReservationByName(); break;
+                        case 3: sortReservationsByName(); break;
+                        case 4: showAllReservations(); break;
+                        case 5: break;
+                        default:
+                            printf("Invalid input, please try again.\n");
+                    }
                 } while (sub != 5);
                 break;
 
@@ -281,10 +291,19 @@ int main() {
                     printf("3. Show all room types\n");
                     printf("4. Back to main menu\n");
                     printf("Choose: ");
-                    scanf("%d", &sub);
-                    if (sub == 1) searchRoomType();
-                    else if (sub == 2) sortRoomTypes();
-                    else if (sub == 3) showAllRoomTypes();
+                    if (scanf("%d", &sub) != 1) {
+                        printf("Invalid input, please try again.\n");
+                        while (getchar() != '\n');
+                        continue;
+                    }
+                    switch (sub) {
+                        case 1: searchRoomType(); break;
+                        case 2: sortRoomTypes(); break;
+                        case 3: showAllRoomTypes(); break;
+                        case 4: break;
+                        default:
+                            printf("Invalid input, please try again.\n");
+                    }
                 } while (sub != 4);
                 break;
 
@@ -295,16 +314,23 @@ int main() {
             case 4:
                 do {
                     printf("\n=== COST MANAGEMENT MENU ===\n");
-                    printf("1. Search by total cost\n");
-                    printf("2. Sort by total cost (cheapest -> most expensive)\n");
-                    printf("3. Show all reservations (to view cost)\n");
-                    printf("4. Back to main menu\n");
+                    printf("1. Sort by total cost (cheapest -> most expensive)\n");
+                    printf("2. Show all reservations (to view cost)\n");
+                    printf("3. Back to main menu\n");
                     printf("Choose: ");
-                    scanf("%d", &sub);
-                    if (sub == 1) searchReservationByCost();
-                    else if (sub == 2) sortReservationsByCost();
-                    else if (sub == 3) showAllReservations();
-                } while (sub != 4);
+                    if (scanf("%d", &sub) != 1) {
+                        printf("Invalid input, please try again.\n");
+                        while (getchar() != '\n');
+                        continue;
+                    }
+                    switch (sub) {
+                        case 1: sortReservationsByCost(); break;
+                        case 2: showAllReservations(); break;
+                        case 3: break;
+                        default:
+                            printf("Invalid input, please try again.\n");
+                    }
+                } while (sub != 3);
                 break;
 
             case 5:
@@ -312,10 +338,9 @@ int main() {
                 break;
 
             default:
-                printf("Invalid choice!\n");
+                printf("Invalid input, please try again.\n");
         }
     } while (menu != 5);
 
     return 0;
 }
-
