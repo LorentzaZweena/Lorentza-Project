@@ -41,7 +41,7 @@ int main() {
    BuatSingleLL(1234, "Ariva");
    TampilkanSingleLL();
    
-   BuatSingleLL(1233, "Zweena");
+   TambahDepan(1233, "Zweena");
    TampilkanSingleLL();
    return 0;
 }
